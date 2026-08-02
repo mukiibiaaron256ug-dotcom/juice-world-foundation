@@ -3,160 +3,304 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Juice World Foundation</title>
+
+<title>Juice World Foundation Uganda | Giving Hope to Vulnerable Children</title>
+
+<meta name="description" content="Juice World Foundation Uganda is a non-profit organization supporting vulnerable children through education, food assistance, healthcare and community development.">
+
+<meta name="keywords" content="Juice World Foundation Uganda, Uganda charity, NGO Uganda, donate Uganda, children foundation">
+
+<meta name="author" content="Juice World Foundation Uganda">
 
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
 body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#f4f4f4;
-    color:#333;
+background:#f4f7f4;
+color:#333;
+line-height:1.6;
 }
 
 header{
-    background:#2e7d32;
-    color:white;
-    text-align:center;
-    padding:60px 20px;
+background:#0b6e2f;
+color:white;
+text-align:center;
+padding:70px 20px;
 }
 
 header h1{
-    margin:0;
-    font-size:40px;
+font-size:42px;
+margin-bottom:15px;
 }
 
 header p{
-    font-size:20px;
-}
-
-.button{
-    display:inline-block;
-    margin-top:20px;
-    background:white;
-    color:#2e7d32;
-    padding:12px 25px;
-    text-decoration:none;
-    border-radius:6px;
-    font-weight:bold;
-}
-
-.button:hover{
-    background:#f0f0f0;
+font-size:20px;
 }
 
 nav{
-    background:#1b5e20;
-    text-align:center;
-    padding:15px;
+background:#084d22;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
+color:white;
+text-decoration:none;
+margin:15px;
+font-weight:bold;
 }
 
 nav a:hover{
-    text-decoration:underline;
+color:gold;
+}
+
+.hero{
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url("https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=1200");
+background-size:cover;
+background-position:center;
+padding:120px 20px;
+text-align:center;
+color:white;
+}
+
+.hero h2{
+font-size:45px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:750px;
+margin:auto;
+margin-bottom:30px;
+}
+
+.button{
+display:inline-block;
+padding:15px 35px;
+background:gold;
+color:black;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
 }
 
 section{
-    max-width:900px;
-    margin:20px auto;
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
 }
 
 h2{
-    color:#2e7d32;
+text-align:center;
+color:#0b6e2f;
+margin-bottom:25px;
+font-size:34px;
 }
 
-#donate{
-    background:#e8f5e9;
-    border:2px solid #2e7d32;
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.card h3{
+color:#0b6e2f;
+margin-bottom:10px;
+}.hero{
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=1200");
+background-size:cover;
+background-position:center;
+padding:120px 20px;
+text-align:center;
+color:white;
 }
 
 footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:30px;
+background:#0b6e2f;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
 }
+
+@media(max-width:768px){
+header h1{font-size:30px;}
+.hero h2{font-size:30px;}
+nav a{display:block;margin:10px 0;}
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Juice World Foundation</h1>
+<h1>Juice World Foundation Uganda</h1>
 <p>Giving Hope to Uganda's Next Generation</p>
-
-<a class="button" href="https://wa.me/256745688224">
-Contact Us on WhatsApp
-</a>
 </header>
 
 <nav>
 <a href="#about">About</a>
 <a href="#story">Our Story</a>
 <a href="#mission">Mission</a>
-<a href="#help">How You Can Help</a>
+<a href="#programs">Programs</a>
 <a href="#donate">Donate</a>
 <a href="#contact">Contact</a>
 </nav>
 
+<div class="hero">
+<h2>Together We Can Change Lives</h2>
+
+<p>
+Supporting vulnerable children through education,
+healthcare, food assistance and community empowerment.
+Every child deserves hope and a brighter future.
+</p>
+
+<a class="button" href="#donate">Donate Now</a>
+</div>
+
 <section id="about">
 <h2>About Us</h2>
+
 <p>
-Juice World Foundation is a community initiative in Uganda dedicated to helping vulnerable children by providing food, care, and hope for a better future.
+Juice World Foundation Uganda is a community-based
+non-profit organization dedicated to improving the lives
+of vulnerable children through food support, education,
+healthcare and community development.
 </p>
+
 </section>
 
 <section id="story">
+
 <h2>Our Story</h2>
+
 <p>
-We started Juice World Foundation because we believe that no child should go hungry. Although we have limited resources, we currently support around 30 children and dream of expanding our work with the help of kind supporters.
+Juice World Foundation Uganda was created from a desire
+to give hope to children facing poverty and hardship.
+We currently support around 30 children and continue
+working to expand our impact with the support of donors,
+volunteers and partners.
 </p>
+
 </section>
 
 <section id="mission">
-<h2>Our Mission</h2>
+
+<h2>Mission & Vision</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Our Mission</h3>
+
 <p>
-To help the new innocent generation by providing food, care, hope, education, and opportunities for a brighter future.
+To improve the lives of vulnerable children through
+education, food assistance, healthcare and community
+empowerment.
 </p>
-</section>
 
-<section id="help">
-<h2>How You Can Help</h2>
+</div>
 
-<ul>
-<li>Support meals for children.</li>
-<li>Partner with our foundation.</li>
-<li>Share our mission.</li>
-<li>Pray for the children.</li>
-</ul>
+<div class="card">
+
+<h3>Our Vision</h3>
+
+<p>
+A Uganda where every child grows up healthy, educated,
+safe and full of hope.
+</p>
+
+</div>
+
+</div>
+
+</section>https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=1200<section id="programs">
+
+<h2>Our Programs</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Education</h3>
+<p>
+Helping vulnerable children access education through school fees,
+books, uniforms and learning materials.
+</p>
+</div>
+
+<div class="card">
+<h3>Food Support</h3>
+<p>
+Providing nutritious meals and emergency food assistance to children
+and families in need.
+</p>
+</div>
+
+<div class="card">
+<h3>Healthcare</h3>
+<p>
+Supporting children with access to medical care, health education and
+essential treatment.
+</p>
+</div>
+
+<div class="card">
+<h3>Community Empowerment</h3>
+<p>
+Working with families and communities to build sustainable solutions
+that improve children's lives.
+</p>
+</div>
+
+</div>
 
 </section>
 
 <section id="donate">
 
-<h2>Donate to Juice World Foundation</h2>
+<h2>Support Our Mission</h2>
 
-<p>Your donation helps us provide meals and care for vulnerable children in Uganda.</p>
+<p>
+Every donation helps us provide food, education and hope to vulnerable
+children in Uganda.
+</p>
 
-<p><strong>MTN Mobile Money</strong></p>
+<br>
 
-<p><strong>Number:</strong> +256 745 688 224</p>
+<div class="card">
+
+<h3>MTN Mobile Money</h3>
 
 <p><strong>Registered Name:</strong> Namugalu Farida</p>
 
-<a class="button" href="https://wa.me/256745688224?text=Hello%20Juice%20World%20Foundation,%20I%20have%20made%20a%20donation.">
-I Have Donated
+<p><strong>Number:</strong> +256 745 688 224</p>
+
+<br>
+
+<a class="button" href="https://wa.me/256745688224?text=Hello%20Juice%20World%20Foundation%20Uganda.%20I%20would%20like%20to%20support%20your%20mission.">
+Donate via WhatsApp
 </a>
+
+</div>
 
 </section>
 
@@ -164,17 +308,35 @@ I Have Donated
 
 <h2>Contact Us</h2>
 
-<p>WhatsApp: +256 745 688 224</p>
+<p><strong>WhatsApp:</strong> +256 745 688 224</p>
+
+<p><strong>Email:</strong> info@juiceworldfoundation.org</p>
+
+<p><strong>Location:</strong> Uganda</p>
+
+<br>
 
 <a class="button" href="https://wa.me/256745688224">
-Chat on WhatsApp
+Chat With Us
 </a>
 
 </section>
 
 <footer>
-© 2026 Juice World Foundation | Uganda
+
+<h3>Juice World Foundation Uganda</h3>
+
+<p>
+Giving Hope to Uganda's Next Generation
+</p>
+
+<br>
+
+<p>
+&copy; 2026 Juice World Foundation Uganda. All Rights Reserved.
+</p>
+
 </footer>
 
 </body>
-</html>
+</html>https://wa.me/256745688224?text=Hello%20Juice%20World%20Foundation%20Uganda.%20I%20would%20like%20to%20support%20your%20missioninfo@juiceworldfoundation.orghttps://wa.me/256745688224
