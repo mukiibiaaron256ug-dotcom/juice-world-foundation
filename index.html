@@ -72,22 +72,42 @@ color:#000;
 }
 
 /* NAVIGATION */
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="our-story.html">Our Story</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="team.html">Team</a></li>
-<li><a href="volunteer.html">Volunteer</a></li>
-<li><a href="news.html">News</a></li>
-<li><a href="events.html">Events</a></li>
-<li><a href="ways-to-help.html">Ways to Help</a></li>
-<li><a href="become-a-sponsor.html">Sponsor</a></li>
-<li><a href="partners.html">Partners</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
+nav{
+background:#0b6e2f;
+overflow-x:auto;
+white-space:nowrap;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav::-webkit-scrollbar{
+display:none;
+}
+
+nav ul{
+display:flex;
+flex-wrap:nowrap;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav li{
+flex:0 0 auto;
+}
+
+nav a{
+display:block;
+padding:16px 22px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+background:#0f7a3d;
+  }
 /* SECTIONS */
 
 section{
