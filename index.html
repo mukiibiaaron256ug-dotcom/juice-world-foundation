@@ -10,6 +10,69 @@
 <meta name="description" content="Juice World Foundation Uganda is a Christian, God-fearing community organization supporting vulnerable children through food, education, care, outreach, and hope.">
 
 <style>
+  /* HAMBURGER MENU */
+
+nav{
+background:#0b6e2f;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.menu-btn{
+display:none;
+font-size:30px;
+color:white;
+padding:15px;
+cursor:pointer;
+text-align:right;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li a{
+display:block;
+padding:15px 20px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+background:#097528;
+}
+
+@media(max-width:768px){
+
+.menu-btn{
+display:block;
+}
+
+nav ul{
+display:none;
+flex-direction:column;
+background:#0b6e2f;
+}
+
+nav ul.show{
+display:flex;
+}
+
+nav ul li{
+border-top:1px solid rgba(255,255,255,.2);
+}
+
+nav ul li a{
+text-align:center;
+}
+
+}
 
 *{
 margin:0;
@@ -18,7 +81,13 @@ box-sizing:border-box;
 scroll-behavior:smooth;
 }
 
-body{
+body{<script>
+
+function toggleMenu() {
+document.getElementById("menu").classList.toggle("show");
+}
+
+</script>
 font-family:Arial,sans-serif;
 background:#f5f7f4;
 color:#333;
