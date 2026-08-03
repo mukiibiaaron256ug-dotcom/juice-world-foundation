@@ -1,27 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Partners | Juice World Foundation Uganda</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7f4;
+color:#333;
+}
+
+header{
+background:#0b6e2f;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+position:sticky;
+top:0;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+width:55px;
+height:55px;
+border-radius:50%;
+background:white;
+padding:5px;
+}
+
+.logo h2{
+font-size:22px;
+}
+
+.menu-btn{
+font-size:34px;
+cursor:pointer;
+}
+
+nav{
+display:none;
+background:white;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+nav.active{
+display:block;
+}
+
+nav a{
+display:block;
+padding:16px;
+text-decoration:none;
+font-weight:bold;
+color:#0b6e2f;
+border-bottom:1px solid #eee;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:25px;
+}
+
+h1{
+color:#0b6e2f;
+margin-bottom:15px;
+font-size:38px;
+}
+
+.intro{
+margin-bottom:25px;
+font-size:18px;
+}
+
+.card{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+border-left:6px solid #0b6e2f;
+}
+
+.card h3{
+color:#0b6e2f;
+margin-bottom:10px;
+}
+
+footer{
+background:#0b6e2f;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="images/logo.png" alt="Logo">
+<h2>Juice World Foundation</h2>
+</div>
+
+<div class="menu-btn" onclick="menu()">☰</div>
+
+</header>
+
+<nav id="nav">
+
+<a href="index.html">🏠 Home</a>
+<a href="our-story.html">📖 Our Story</a>
+<a href="projects.html">❤️ Projects</a>
+<a href="gallery.html">🖼 Gallery</a>
+<a href="team.html">👥 Team</a>
+<a href="events.html">🎉 Events</a>
+<a href="news.html">📰 News</a>
+<a href="partners.html">🤝 Partners</a>
+<a href="ways-to-help.html">💚 Ways To Help</a>
+<a href="contact.html">📞 Contact</a>
+<a href="policies.html">📜 Policies</a>
+
+</nav>
+
+<div class="container">
+
+<h1>🤝 Our Partners</h1>
+
+<p class="intro">
+We are grateful for the organizations and groups that support our mission of bringing hope and a better future to vulnerable children in Uganda.
+</p>
+
 <div class="card">
+<h3>🎬 Shiarona Film Productions</h3>
+<p>Supporting awareness campaigns, media production and community outreach.</p>
+</div>
 
-<h2>Our Partners</h2>
+<div class="card">
+<h3>💃 Mask Geng Dancers Africa</h3>
+<p>Supporting youth talent, entertainment and cultural activities.</p>
+</div>
 
-<p>
-We are proud to work alongside organizations and groups that share our vision of supporting children and strengthening communities.
-</p>
+<div class="card">
+<h3>🏋️ Kimanlee Fitness Club</h3>
+<p>Promoting health, fitness and community wellbeing.</p>
+</div>
 
-<ul>
+<div class="card">
+<h3>🚌 Juice Wrld Tours and Travels</h3>
+<p>Supporting outreach programmes and future fundraising activities.</p>
+</div>
 
-<li><strong>Shiarona Film Productions</strong> – Supporting awareness, media production, and community outreach.</li>
+<div class="card">
+<h3>🎥 Riyal Film Productions</h3>
+<p>Supporting storytelling, media production and awareness campaigns.</p>
+</div>
 
-<li><strong>Mask Geng Dancers Africa</strong> – Supporting community events, youth engagement, and cultural activities.</li>
+</div>
 
-<li><strong>Kimanlee Fitness Club</strong> – Promoting health, fitness, and community participation.</li>
+<footer>
 
-<li><strong>Juice Wrld Tours and Travels</strong> – Supporting community outreach and future fundraising initiatives.</li>
+<p>© 2026 Juice World Foundation Uganda</p>
 
-<li><strong>Riyal Film Productions</strong> – Supporting media production, storytelling, and awareness campaigns for our mission.</li>
+</footer>
 
-</ul>
+<script>
+function menu(){
+document.getElementById("nav").classList.toggle("active");
+}
+</script>
 
-<p>
-We sincerely thank all our partners for standing with Juice World Foundation Uganda. Together, we are creating hope and brighter futures for vulnerable children across Uganda.
-</p>
-
-  </div>
+</body>
+  </html>
