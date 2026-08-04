@@ -23,7 +23,106 @@ color:#333;
 
 /* HEADER */
 
-header{
+<header>
+  
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="70" height="70">
+
+<defs>
+<linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#0F8A4B"/>
+<stop offset="100%" stop-color="#D4AF37"/>
+</linearGradient>
+
+<linearGradient id="globe" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%" stop-color="#5BC0FF"/>
+<stop offset="100%" stop-color="#1565C0"/>
+</linearGradient>
+</defs>
+
+<!-- Outer Circle -->
+<circle cx="400" cy="400" r="340" fill="white" stroke="url(#ring)" stroke-width="20"/>
+
+<!-- Leaf -->
+<path d="M400 120
+C455 150 470 205 400 240
+C330 205 345 150 400 120Z"
+fill="#0F8A4B"/>
+
+<line x1="400" y1="130" x2="400" y2="235"
+stroke="white" stroke-width="5"/>
+
+<!-- Globe -->
+<circle cx="400" cy="300" r="95"
+fill="url(#globe)"
+stroke="#0F8A4B"
+stroke-width="6"/>
+
+<ellipse cx="400" cy="300" rx="70" ry="95"
+fill="none"
+stroke="white"
+stroke-width="2"/>
+
+<ellipse cx="400" cy="300" rx="40" ry="95"
+fill="none"
+stroke="white"
+stroke-width="2"/>
+
+<line x1="305" y1="300" x2="495" y2="300"
+stroke="white"
+stroke-width="2"/>
+
+<line x1="320" y1="265" x2="480" y2="265"
+stroke="white"
+stroke-width="2"/>
+
+<line x1="320" y1="335" x2="480" y2="335"
+stroke="white"
+stroke-width="2"/>
+
+<!-- Helping Hands -->
+<path d="M250 430
+C300 365 350 355 400 390
+C450 355 500 365 550 430"
+fill="none"
+stroke="#0F8A4B"
+stroke-width="18"
+stroke-linecap="round"/>
+
+<!-- Heart -->
+<path d="M400 410
+C380 385 345 392 345 425
+C345 455 400 485 400 485
+C400 485 455 455 455 425
+C455 392 420 385 400 410Z"
+fill="#D4AF37"/>
+
+<!-- Initials -->
+<text x="400"
+y="560"
+text-anchor="middle"
+font-size="72"
+font-family="Arial"
+font-weight="bold"
+fill="#0F8A4B">JWF</text>
+
+<!-- Foundation Name -->
+<text x="400"
+y="620"
+text-anchor="middle"
+font-size="34"
+font-family="Arial"
+font-weight="bold"
+fill="#0F8A4B">JUICE WORLD FOUNDATION</text>
+
+<!-- Country -->
+<text x="400"
+y="660"
+text-anchor="middle"
+font-size="26"
+font-family="Arial"
+fill="#D4AF37">UGANDA</text>
+
+</svg>
 background:#0b6e2f;
 padding:15px 20px;
 display:flex;
