@@ -1,33 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<style>
-
-html{
-    height:auto;
-    min-height:100%;
-    overflow-y:auto;
-    overflow-x:hidden;
-}
-
-body{
-    min-height:100vh;
-    height:auto;
-    overflow-y:auto;
-    overflow-x:hidden;
-    margin:0;
-    padding:0;
-}
-
-</style>
-
-</head>
-
-</body>
-</html>
-<html lang="en">
-<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Our Partners | Juice World Foundation Uganda</title>
@@ -52,8 +25,6 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:15px 20px;
-position:sticky;
-top:0;
 }
 
 .logo{
@@ -66,45 +37,22 @@ gap:10px;
 width:55px;
 height:55px;
 border-radius:50%;
-background:white;
-padding:5px;
+background:#fff;
 }
 
 .logo h2{
 font-size:22px;
 }
 
-.menu-btn{
-font-size:34px;
-cursor:pointer;
-}
-
-nav{
-display:none;
-background:white;
-box-shadow:0 5px 15px rgba(0,0,0,.15);
-}
-
-nav.active{
-display:block;
-}
-
-nav a{
-display:block;
-padding:16px;
-text-decoration:none;
-font-weight:bold;
-color:#0b6e2f;
-border-bottom:1px solid #eee;
-}
-
 .container{
-  height:auto;
+max-width:900px;
+margin:auto;
+padding:25px;
+}
 
 h1{
 color:#0b6e2f;
 margin-bottom:15px;
-font-size:38px;
 }
 
 .intro{
@@ -113,205 +61,104 @@ font-size:18px;
 }
 
 .card{
- height:auto;
+background:#fff;
+padding:25px;
+margin-bottom:25px;
+border-left:6px solid #0b6e2f;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
 
 .card h3{
 color:#0b6e2f;
 margin-bottom:10px;
 }
 
+.contact-buttons{
+display:flex;
+flex-direction:column;
+gap:12px;
+margin-top:20px;
+}
+
+.btn{
+display:block;
+padding:15px;
+text-align:center;
+text-decoration:none;
+font-weight:bold;
+border-radius:40px;
+color:white;
+}
+
+.whatsapp{
+background:#25D366;
+}
+
+.call{
+background:#0b6e2f;
+}
+
 footer{
 background:#0b6e2f;
 color:white;
 text-align:center;
-padding:25px;
+padding:20px;
 margin-top:40px;
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
-
 <div class="logo">
 <img src="images/logo.png" alt="Logo">
 <h2>Juice World Foundation</h2>
 </div>
-
-<div class="menu-btn" onclick="menu()">☰</div>
-
 </header>
-
-<nav id="nav">
-
-<a href="index.html">🏠 Home</a>
-<a href="our-story.html">📖 Our Story</a>
-<a href="projects.html">❤️ Projects</a>
-<a href="gallery.html">🖼 Gallery</a>
-<a href="team.html">👥 Team</a>
-<a href="events.html">🎉 Events</a>
-<a href="news.html">📰 News</a>
-<a href="partners.html">🤝 Partners</a>
-<a href="ways-to-help.html">💚 Ways To Help</a>
-<a href="contact.html">📞 Contact</a>
-<a href="policies.html">📜 Policies</a>
-
-</nav>
 
 <div class="container">
 
 <h1>🤝 Our Partners</h1>
 
 <p class="intro">
-We are grateful for the organizations and groups that support our mission of bringing hope and a better future to vulnerable children in Uganda.
+We are grateful for the organisations and groups that support our mission.
 </p>
 
 <div class="card">
 <h3>🎬 Shiarona Film Productions</h3>
 <p>Supporting awareness campaigns, media production and community outreach.</p>
+
 <div class="contact-buttons">
+<a href="https://wa.me/256752190458" class="btn whatsapp">💬 WhatsApp Us</a>
+<a href="tel:+256752190458" class="btn call">📞 Call Us</a>
+</div>
+</div>
 
-<a href="https://wa.me/256752190458" class="btn whatsapp" target="_blank">
-💬 WhatsApp Us
-</a>
-
-<a href="tel:+256752190458" class="btn call">
-📞 Call Us
-</a>
-
-</a>
-
-</a>
-<style>
-  
-body{
-    background:#f4f7f4;
-}
-.contact-buttons{
-display:flex;
-flex-direction:column;
-gap:15px;
-margin:30px 20px;
-}
-
-.btn{
-display:block;
-padding:18px;
-border-radius:40px;
-text-align:center;
-text-decoration:none;
-font-size:20px;
-font-weight:bold;
-color:white;
-}
-
-.whatsapp{
-background:#25D366;
-}
-
-.call{
-background:#0b6e2f;
-}
-
-
-  </style>
-  
 <div class="card">
 <h3>💃 Mask Geng Dancers Africa</h3>
 <p>Supporting youth talent, entertainment and cultural activities.</p>
-</div>
+
 <div class="contact-buttons">
-
-<a href="https://wa.me/256745558950" class="btn whatsapp" target="_blank">
-💬 WhatsApp Us
-</a>
-
-<a href="tel:+256745558950" class="btn call">
-📞 Call Us
-</a>
-  
-<style>
-  
-body{
-    background:#f4f7f4;
-}
-.contact-buttons{
-display:flex;
-flex-direction:column;
-gap:15px;
-margin:30px 20px;
-}
-
-.btn{
-display:block;
-padding:18px;
-border-radius:40px;
-text-align:center;
-text-decoration:none;
-font-size:20px;
-font-weight:bold;
-color:white;
-}
-
-.whatsapp{
-background:#25D366;
-}
-
-.call{
-background:#0b6e2f;
-}
+<a href="https://wa.me/256745558950" class="btn whatsapp">💬 WhatsApp Us</a>
+<a href="tel:+256745558950" class="btn call">📞 Call Us</a>
+</div>
+</div>
 
 <div class="card">
 <h3>🏋️ Kimanlee Fitness Club</h3>
 <p>Promoting health, fitness and community wellbeing.</p>
-</div>
+
 <div class="contact-buttons">
-
-<a href="https://wa.me/256759849636" class="btn whatsapp" target="_blank">
-💬 WhatsApp Us
-</a>
-
-<a href="tel:+256759849636" class="btn call">
-📞 Call Us
-</a>
-overflow-y:auto;
-<style>
-  
-body{
-    background:#f4f7f4;
-}
-.contact-buttons{
-display:flex;
-flex-direction:column;
-gap:15px;
-margin:30px 20px;
-}
-
-.btn{
-display:block;
-padding:18px;
-border-radius:40px;
-text-align:center;
-text-decoration:none;
-font-size:20px;
-font-weight:bold;
-color:white;
-}
-
-.whatsapp{
-background:#25D366;
-}
-
-.call{
-background:#0b6e2f;
-}
-
+<a href="https://wa.me/256759849636" class="btn whatsapp">💬 WhatsApp Us</a>
+<a href="tel:+256759849636" class="btn call">📞 Call Us</a>
+</div>
+</div>
 
 <div class="card">
 <h3>🚌 Juice Wrld Tours and Travels</h3>
-<p>Supporting outreach programmes and future fundraising activities.</p>
+<p>Supporting outreach programmes and fundraising activities.</p>
 </div>
 
 <div class="card">
@@ -322,16 +169,8 @@ background:#0b6e2f;
 </div>
 
 <footer>
-
 <p>© 2026 Juice World Foundation Uganda</p>
-
 </footer>
 
-<script>
-function menu(){
-document.getElementById("nav").classList.toggle("active");
-}
-</script>
-
 </body>
-  </html>
+</html>
