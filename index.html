@@ -189,55 +189,212 @@ nav a:hover{
     line-height:1.8;
 }
 
-
 /* =========================
-   FOOTER
+   COMPACT PROFESSIONAL FOOTER
 ========================= */
 
 .footer{
     background:#064b1d;
     color:#fff;
-    margin-top:60px;
-    padding:50px 25px 20px;
+    margin-top:45px;
+    padding:35px 20px 15px;
 }
 
 .footer-container{
     max-width:1100px;
     margin:auto;
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:40px;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:30px;
 }
 
 .footer-section h3{
     color:#D4AF37;
-    font-size:22px;
-    margin-bottom:20px;
+    font-size:20px;
+    margin-bottom:14px;
 }
 
 .footer-section p{
     color:#e5e5e5;
-    line-height:1.7;
-    font-size:15px;
+    line-height:1.5;
+    font-size:14px;
+    margin-bottom:8px;
 }
 
 .footer-section ul{
     list-style:none;
+    padding:0;
+    margin:0;
 }
 
 .footer-section ul li{
-    margin-bottom:12px;
+    margin-bottom:8px;
 }
 
 .footer-section ul li a{
     color:#fff;
+    font-size:14px;
     transition:.3s;
 }
 
 .footer-section ul li a:hover{
     color:#D4AF37;
-    padding-left:5px;
 }
+
+
+/* FOOTER LOGO */
+
+.footer-logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:12px;
+}
+
+.footer-logo svg{
+    width:48px;
+    height:48px;
+    flex-shrink:0;
+}
+
+.footer-logo h2{
+    font-size:17px;
+    line-height:1.2;
+    color:#fff;
+}
+
+
+/* WHATSAPP */
+
+.footer-whatsapp{
+    display:inline-block;
+    margin-top:10px;
+    padding:9px 16px;
+    background:#25D366;
+    color:#fff;
+    border-radius:25px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.footer-whatsapp:hover{
+    background:#1ebe5d;
+}
+
+
+/* SOCIAL ICONS */
+
+.social-links{
+    display:flex;
+    gap:8px;
+    margin-top:14px;
+}
+
+.social-links a{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#fff;
+    color:#0b6e2f;
+    font-size:17px;
+}
+
+
+/* COPYRIGHT */
+
+.footer-bottom{
+    max-width:1100px;
+    margin:25px auto 0;
+    padding-top:15px;
+    border-top:1px solid rgba(255,255,255,.18);
+    text-align:center;
+}
+
+.footer-bottom p{
+    color:#ccc;
+    font-size:12px;
+    line-height:1.5;
+}
+
+.footer-bottom span{
+    color:#D4AF37;
+}
+
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    .footer{
+        margin-top:35px;
+        padding:30px 18px 12px;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr 1fr;
+        gap:25px 18px;
+    }
+
+    /* About section takes full width */
+
+    .footer-section:first-child{
+        grid-column:1 / -1;
+    }
+
+    .footer-section h3{
+        font-size:18px;
+        margin-bottom:10px;
+    }
+
+    .footer-section p{
+        font-size:13px;
+        line-height:1.5;
+    }
+
+    .footer-section ul li{
+        margin-bottom:7px;
+    }
+
+    .footer-section ul li a{
+        font-size:13px;
+    }
+
+    .footer-logo svg{
+        width:45px;
+        height:45px;
+    }
+
+    .footer-logo h2{
+        font-size:16px;
+    }
+
+    .footer-whatsapp{
+        padding:8px 14px;
+        font-size:13px;
+    }
+
+    .social-links{
+        margin-top:10px;
+    }
+
+    .social-links a{
+        width:34px;
+        height:34px;
+        font-size:15px;
+    }
+
+    .footer-bottom{
+        margin-top:20px;
+        padding-top:12px;
+    }
+
+    .footer-bottom p{
+        font-size:11px;
+    }
+       }
 
 
 /* FOOTER LOGO */
