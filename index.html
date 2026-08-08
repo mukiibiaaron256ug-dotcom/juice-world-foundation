@@ -3,81 +3,828 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Juice World Foundation Uganda</title>
+
 <meta name="description" content="Giving Hope, Love and a Better Future to Every Child">
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
-body{background:#f4f7f4;color:#333}
-header{background:#0b6e2f;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:999}
-.logo{display:flex;align-items:center;gap:12px}
-.logo svg{width:70px;height:70px}
-.logo h2{color:#fff;font-size:22px}
-.menu-btn{font-size:34px;color:#fff;cursor:pointer}
-nav{display:none;background:#fff;box-shadow:0 5px 20px rgba(0,0,0,.15)}
-nav.active{display:block}
-nav a{display:block;padding:18px;text-decoration:none;font-weight:bold;color:#0b6e2f;border-bottom:1px solid #eee}
-nav a:hover{background:#f4f4f4}
-.hero{padding:40px 25px}
-.hero h1{font-size:52px;line-height:1.1;margin-bottom:15px}
-.hero h1 span{color:#0b6e2f}
-.hero p{font-size:20px;margin-bottom:30px;color:#555}
-.btn{display:block;text-align:center;padding:18px;margin-bottom:15px;border-radius:40px;text-decoration:none;font-size:20px;font-weight:bold}
-.whatsapp{background:#0b6e2f;color:#fff}
-.donate{background:#fff;color:#0b6e2f;border:2px solid #0b6e2f}
-.card{background:#fff;margin:20px;padding:30px;border-radius:20px;box-shadow:0 8px 25px rgba(0,0,0,.12)}
-.card h2{color:#0b6e2f;margin-bottom:15px;font-size:34px}
-.card p{font-size:19px;line-height:1.8}
-@media(min-width:900px){.hero,.card{max-width:1100px;margin:auto}.card{margin:30px auto}}
+
+/* =========================
+   GENERAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#f4f7f4;
+    color:#333;
+    min-height:100vh;
+}
+
+a{
+    text-decoration:none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:#0b6e2f;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo svg{
+    width:70px;
+    height:70px;
+}
+
+.logo h2{
+    color:#fff;
+    font-size:22px;
+}
+
+.menu-btn{
+    font-size:34px;
+    color:#fff;
+    cursor:pointer;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+nav{
+    display:none;
+    background:#fff;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+nav.active{
+    display:block;
+}
+
+nav a{
+    display:block;
+    padding:18px;
+    text-decoration:none;
+    font-weight:bold;
+    color:#0b6e2f;
+    border-bottom:1px solid #eee;
+}
+
+nav a:hover{
+    background:#f4f4f4;
+    color:#D4AF37;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    padding:70px 25px;
+    text-align:center;
+    background:linear-gradient(
+        135deg,
+        #ffffff,
+        #eef7f0
+    );
+}
+
+.hero h1{
+    font-size:52px;
+    line-height:1.1;
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    color:#0b6e2f;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+    color:#555;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn{
+    display:block;
+    text-align:center;
+    padding:18px;
+    margin-bottom:15px;
+    border-radius:40px;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.whatsapp{
+    background:#0b6e2f;
+    color:#fff;
+}
+
+.whatsapp:hover{
+    background:#095a27;
+}
+
+.donate{
+    background:#fff;
+    color:#0b6e2f;
+    border:2px solid #0b6e2f;
+}
+
+.donate:hover{
+    background:#0b6e2f;
+    color:#fff;
+}
+
+
+/* =========================
+   WELCOME CARD
+========================= */
+
+.card{
+    background:#fff;
+    margin:20px;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+}
+
+.card h2{
+    color:#0b6e2f;
+    margin-bottom:15px;
+    font-size:34px;
+}
+
+.card p{
+    font-size:19px;
+    line-height:1.8;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+    background:#064b1d;
+    color:#fff;
+    margin-top:60px;
+    padding:50px 25px 20px;
+}
+
+.footer-container{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+}
+
+.footer-section h3{
+    color:#D4AF37;
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+.footer-section p{
+    color:#e5e5e5;
+    line-height:1.7;
+    font-size:15px;
+}
+
+.footer-section ul{
+    list-style:none;
+}
+
+.footer-section ul li{
+    margin-bottom:12px;
+}
+
+.footer-section ul li a{
+    color:#fff;
+    transition:.3s;
+}
+
+.footer-section ul li a:hover{
+    color:#D4AF37;
+    padding-left:5px;
+}
+
+
+/* FOOTER LOGO */
+
+.footer-logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:15px;
+}
+
+.footer-logo svg{
+    width:65px;
+    height:65px;
+}
+
+.footer-logo h2{
+    font-size:20px;
+    color:#fff;
+}
+
+
+/* FOOTER CONTACT BUTTON */
+
+.footer-whatsapp{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 20px;
+    background:#25D366;
+    color:#fff;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.footer-whatsapp:hover{
+    background:#1ebe5d;
+}
+
+
+/* SOCIAL ICONS */
+
+.social-links{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+}
+
+.social-links a{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#fff;
+    color:#0b6e2f;
+    font-size:20px;
+    transition:.3s;
+}
+
+.social-links a:hover{
+    background:#D4AF37;
+    color:#fff;
+    transform:translateY(-3px);
+}
+
+
+/* COPYRIGHT */
+
+.footer-bottom{
+    max-width:1100px;
+    margin:40px auto 0;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.2);
+    text-align:center;
+}
+
+.footer-bottom p{
+    color:#ddd;
+    font-size:14px;
+    line-height:1.6;
+}
+
+.footer-bottom span{
+    color:#D4AF37;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:700px){
+
+    .logo h2{
+        font-size:18px;
+    }
+
+    .logo svg{
+        width:55px;
+        height:55px;
+    }
+
+    .hero{
+        padding:55px 20px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    .footer{
+        padding:40px 20px 20px;
+    }
+
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media(min-width:900px){
+
+    .hero{
+        max-width:1100px;
+        margin:auto;
+        padding:90px 40px;
+    }
+
+    .card{
+        max-width:1100px;
+        margin:30px auto;
+    }
+
+}
+
 </style>
 </head>
+
+
 <body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
 <header>
+
 <div class="logo">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="70" height="70">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 800 800"
+     width="70"
+     height="70">
+
 <defs>
-<linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0F8A4B"/><stop offset="100%" stop-color="#D4AF37"/></linearGradient>
-<linearGradient id="globe" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#5BC0FF"/><stop offset="100%" stop-color="#1565C0"/></linearGradient>
+
+<linearGradient id="ring"
+x1="0%"
+y1="0%"
+x2="100%"
+y2="100%">
+
+<stop offset="0%" stop-color="#0F8A4B"/>
+<stop offset="100%" stop-color="#D4AF37"/>
+
+</linearGradient>
+
+<linearGradient id="globe"
+x1="0%"
+y1="0%"
+x2="0%"
+y2="100%">
+
+<stop offset="0%" stop-color="#5BC0FF"/>
+<stop offset="100%" stop-color="#1565C0"/>
+
+</linearGradient>
+
 </defs>
-<circle cx="400" cy="400" r="340" fill="white" stroke="url(#ring)" stroke-width="20"/>
-<path d="M400 120 C455 150 470 205 400 240 C330 205 345 150 400 120Z" fill="#0F8A4B"/>
-<line x1="400" y1="130" x2="400" y2="235" stroke="white" stroke-width="5"/>
-<circle cx="400" cy="300" r="95" fill="url(#globe)" stroke="#0F8A4B" stroke-width="6"/>
-<ellipse cx="400" cy="300" rx="70" ry="95" fill="none" stroke="white" stroke-width="2"/>
-<ellipse cx="400" cy="300" rx="40" ry="95" fill="none" stroke="white" stroke-width="2"/>
-<line x1="305" y1="300" x2="495" y2="300" stroke="white" stroke-width="2"/>
-<line x1="320" y1="265" x2="480" y2="265" stroke="white" stroke-width="2"/>
-<line x1="320" y1="335" x2="480" y2="335" stroke="white" stroke-width="2"/>
-<path d="M250 430 C300 365 350 355 400 390 C450 355 500 365 550 430" fill="none" stroke="#0F8A4B" stroke-width="18" stroke-linecap="round"/>
-<path d="M400 410 C380 385 345 392 345 425 C345 455 400 485 400 485 C400 485 455 455 455 425 C455 392 420 385 400 410Z" fill="#D4AF37"/>
+
+
+<circle
+cx="400"
+cy="400"
+r="340"
+fill="white"
+stroke="url(#ring)"
+stroke-width="20"/>
+
+
+<path
+d="M400 120
+C455 150 470 205 400 240
+C330 205 345 150 400 120Z"
+fill="#0F8A4B"/>
+
+
+<line
+x1="400"
+y1="130"
+x2="400"
+y2="235"
+stroke="white"
+stroke-width="5"/>
+
+
+<circle
+cx="400"
+cy="300"
+r="95"
+fill="url(#globe)"
+stroke="#0F8A4B"
+stroke-width="6"/>
+
+
+<ellipse
+cx="400"
+cy="300"
+rx="70"
+ry="95"
+fill="none"
+stroke="white"
+stroke-width="2"/>
+
+
+<ellipse
+cx="400"
+cy="300"
+rx="40"
+ry="95"
+fill="none"
+stroke="white"
+stroke-width="2"/>
+
+
+<line
+x1="305"
+y1="300"
+x2="495"
+y2="300"
+stroke="white"
+stroke-width="2"/>
+
+
+<line
+x1="320"
+y1="265"
+x2="480"
+y2="265"
+stroke="white"
+stroke-width="2"/>
+
+
+<line
+x1="320"
+y1="335"
+x2="480"
+y2="335"
+stroke="white"
+stroke-width="2"/>
+
+
+<path
+d="M250 430
+C300 365 350 355 400 390
+C450 355 500 365 550 430"
+fill="none"
+stroke="#0F8A4B"
+stroke-width="18"
+stroke-linecap="round"/>
+
+
+<path
+d="M400 410
+C380 385 345 392 345 425
+C345 455 400 485 400 485
+C400 485 455 455 455 425
+C455 392 420 385 400 410Z"
+fill="#D4AF37"/>
+
 </svg>
+
 <h2>Juice World Foundation</h2>
+
 </div>
+
+
 <div class="menu-btn" onclick="menu()">☰</div>
+
 </header>
+
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
 <nav id="nav">
+
 <a href="index.html">🏠 Home</a>
+
 <a href="our-story.html">📖 Our Story</a>
+
 <a href="projects.html">❤️ Projects</a>
+
 <a href="gallery.html">🖼 Gallery</a>
+
 <a href="team.html">👥 Team</a>
+
 <a href="events.html">🎉 Events</a>
+
 <a href="news.html">📰 News</a>
+
 <a href="partners.html">🤝 Partners</a>
+
 <a href="ways-to-help.html">💚 Ways to Help</a>
+
 <a href="contact.html">📞 Contact</a>
+
 <a href="policies.html">📜 Policies</a>
+
 </nav>
+
+
+
+<!-- =========================
+     HERO
+========================= -->
+
 <section class="hero">
-<h1>Juice World Foundation <span>Uganda</span></h1>
-<p>Giving Hope, Love and a Better Future to Every Child.</p>
-<a class="btn whatsapp" href="https://wa.me/256745688224">Contact Us on WhatsApp</a>
-<a class="btn donate" href="donate.html">Donate Now</a>
+
+<h1>
+Juice World Foundation
+<span>Uganda</span>
+</h1>
+
+<p>
+Giving Hope, Love and a Better Future to Every Child.
+</p>
+
+
+<a
+class="btn whatsapp"
+href="https://wa.me/256745688224">
+
+💬 Contact Us on WhatsApp
+
+</a>
+
+
+<a
+class="btn donate"
+href="donate.html">
+
+❤️ Donate Now
+
+</a>
+
 </section>
+
+
+
+<!-- =========================
+     WELCOME
+========================= -->
+
 <section class="card">
-<h2>Welcome to Juice World Foundation Uganda</h2>
-<p>Juice World Foundation Uganda is a Christian, God-fearing community organisation committed to bringing hope, love and practical support to vulnerable children and families throughout Uganda.</p>
+
+<h2>
+Welcome to Juice World Foundation Uganda
+</h2>
+
+<p>
+Juice World Foundation Uganda is a Christian, God-fearing community organisation committed to bringing hope, love and practical support to vulnerable children and families throughout Uganda.
+</p>
+
 </section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+<div class="footer-container">
+
+
+<!-- ABOUT -->
+
+<div class="footer-section">
+
+<div class="footer-logo">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 800 800">
+
+<circle
+cx="400"
+cy="400"
+r="340"
+fill="white"
+stroke="#D4AF37"
+stroke-width="20"/>
+
+<path
+d="M400 120
+C455 150 470 205 400 240
+C330 205 345 150 400 120Z"
+fill="#0F8A4B"/>
+
+<circle
+cx="400"
+cy="300"
+r="95"
+fill="#1565C0"
+stroke="#0F8A4B"
+stroke-width="6"/>
+
+<path
+d="M250 430
+C300 365 350 355 400 390
+C450 355 500 365 550 430"
+fill="none"
+stroke="#0F8A4B"
+stroke-width="18"
+stroke-linecap="round"/>
+
+<path
+d="M400 410
+C380 385 345 392 345 425
+C345 455 400 485 400 485
+C400 485 455 455 455 425
+C455 392 420 385 400 410Z"
+fill="#D4AF37"/>
+
+</svg>
+
+<h2>Juice World<br>Foundation Uganda</h2>
+
+</div>
+
+
+<p>
+Giving Hope, Love and a Better Future to Every Child.
+</p>
+
+<p style="margin-top:12px;">
+Together, we can make a difference in the lives of vulnerable children and families.
+</p>
+
+
+<div class="social-links">
+
+<a href="https://wa.me/256745688224">💬</a>
+
+<a href="contact.html">📞</a>
+
+<a href="gallery.html">📸</a>
+
+</div>
+
+</div>
+
+
+
+<!-- QUICK LINKS -->
+
+<div class="footer-section">
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li>
+<a href="index.html">🏠 Home</a>
+</li>
+
+<li>
+<a href="our-story.html">📖 Our Story</a>
+</li>
+
+<li>
+<a href="projects.html">❤️ Our Projects</a>
+</li>
+
+<li>
+<a href="gallery.html">🖼 Gallery</a>
+</li>
+
+<li>
+<a href="partners.html">🤝 Our Partners</a>
+</li>
+
+<li>
+<a href="contact.html">📞 Contact Us</a>
+</li>
+
+</ul>
+
+</div>
+
+
+
+<!-- CONTACT -->
+
+<div class="footer-section">
+
+<h3>Contact Us</h3>
+
+<p>
+📍 Uganda
+</p>
+
+<p style="margin-top:10px;">
+📱 +256 745 688224
+</p>
+
+<p style="margin-top:10px;">
+💚 We are here to serve our community.
+</p>
+
+
+<a
+href="https://wa.me/256745688224"
+class="footer-whatsapp">
+
+💬 WhatsApp Us
+
+</a>
+
+</div>
+
+
+</div>
+
+
+
+<!-- FOOTER BOTTOM -->
+
+<div class="footer-bottom">
+
+<p>
+© 2026 <span>Juice World Foundation Uganda</span>.
+All Rights Reserved.
+</p>
+
+<p style="margin-top:8px;">
+Giving Hope • Love • A Better Future
+</p>
+
+</div>
+
+</footer>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
 <script>
-function menu(){document.getElementById('nav').classList.toggle('active');}
+
+function menu(){
+
+document
+.getElementById('nav')
+.classList
+.toggle('active');
+
+}
+
 </script>
-</body></html>
+
+
+</body>
+</html>
