@@ -41,11 +41,58 @@ text-align:center;
 padding:20px;
 margin-top:40px;
 }
+
+/* === Shared mobile hamburger navigation === */
+.site-menu-btn{
+    display:block;
+    border:0;
+    background:transparent;
+    color:#fff;
+    font-size:32px;
+    line-height:1;
+    cursor:pointer;
+    padding:6px 8px;
+}
+.site-nav{
+    display:none;
+    background:#fff;
+    box-shadow:0 6px 20px rgba(0,0,0,.14);
+    position:relative;
+    z-index:998;
+}
+.site-nav.open{display:block}
+.site-nav a{
+    display:block;
+    padding:15px 18px;
+    color:#0b6e2f;
+    text-decoration:none;
+    font-weight:700;
+    border-bottom:1px solid #eee;
+}
+.site-nav a:hover{background:#f4f7f4;color:#D4AF37}
+
 </style>
 
 </head>
 
 <body>
+<button class="site-menu-btn" onclick="toggleSiteMenu()" aria-label="Open navigation menu" aria-controls="siteNav">☰</button>
+
+<nav class="site-nav" id="siteNav">
+<a href="index.html">🏠 Home</a>
+<a href="our-story.html">📖 Our Story</a>
+<a href="projects.html">❤️ Projects</a>
+<a href="gallery.html">🖼 Gallery</a>
+<a href="team.html">👥 Team</a>
+<a href="events.html">🎉 Events</a>
+<a href="news.html">📰 News</a>
+<a href="partners.html">🤝 Partners</a>
+<a href="ways-to-help.html">💚 Ways to Help</a>
+<a href="contact.html">📞 Contact</a>
+<a href="policies.html">📜 Policies</a>
+</nav>
+
+
 
 <header>
 <h1>Our Policies</h1>
@@ -101,6 +148,14 @@ We are committed to using donations responsibly, acting honestly, and maintainin
 <footer>
 <p>© 2026 Juice World Foundation Uganda. All Rights Reserved.</p>
 </footer>
+
+
+<script>
+function toggleSiteMenu(){
+    var nav=document.getElementById('siteNav');
+    if(nav) nav.classList.toggle('open');
+}
+</script>
 
 </body>
 </html>
