@@ -10,10 +10,6 @@
 
 <style>
 
-/* =========================
-   GENERAL
-========================= */
-
 *{
     margin:0;
     padding:0;
@@ -87,7 +83,6 @@ nav.active{
 nav a{
     display:block;
     padding:18px;
-    text-decoration:none;
     font-weight:bold;
     color:#0b6e2f;
     border-bottom:1px solid #eee;
@@ -140,7 +135,6 @@ nav a:hover{
     padding:18px;
     margin-bottom:15px;
     border-radius:40px;
-    text-decoration:none;
     font-size:20px;
     font-weight:bold;
 }
@@ -189,36 +183,37 @@ nav a:hover{
     line-height:1.8;
 }
 
+
 /* =========================
-   COMPACT PROFESSIONAL FOOTER
+   COMPACT FOOTER
 ========================= */
 
 .footer{
     background:#064b1d;
     color:#fff;
-    margin-top:45px;
-    padding:35px 20px 15px;
+    margin-top:40px;
+    padding:30px 18px 12px;
 }
 
 .footer-container{
     max-width:1100px;
     margin:auto;
     display:grid;
-    grid-template-columns:1.4fr 1fr 1fr;
-    gap:30px;
+    grid-template-columns:1.3fr 1fr 1fr;
+    gap:25px;
 }
 
 .footer-section h3{
     color:#D4AF37;
-    font-size:20px;
-    margin-bottom:14px;
+    font-size:19px;
+    margin-bottom:12px;
 }
 
 .footer-section p{
     color:#e5e5e5;
     line-height:1.5;
-    font-size:14px;
-    margin-bottom:8px;
+    font-size:13px;
+    margin-bottom:7px;
 }
 
 .footer-section ul{
@@ -228,13 +223,12 @@ nav a:hover{
 }
 
 .footer-section ul li{
-    margin-bottom:8px;
+    margin-bottom:7px;
 }
 
 .footer-section ul li a{
     color:#fff;
-    font-size:14px;
-    transition:.3s;
+    font-size:13px;
 }
 
 .footer-section ul li a:hover{
@@ -242,38 +236,42 @@ nav a:hover{
 }
 
 
-/* FOOTER LOGO */
+/* =========================
+   FOOTER LOGO
+========================= */
 
 .footer-logo{
     display:flex;
     align-items:center;
-    gap:10px;
-    margin-bottom:12px;
+    gap:9px;
+    margin-bottom:10px;
 }
 
 .footer-logo svg{
-    width:48px;
-    height:48px;
+    width:45px;
+    height:45px;
     flex-shrink:0;
 }
 
 .footer-logo h2{
-    font-size:17px;
+    font-size:16px;
     line-height:1.2;
     color:#fff;
 }
 
 
-/* WHATSAPP */
+/* =========================
+   WHATSAPP BUTTON
+========================= */
 
 .footer-whatsapp{
     display:inline-block;
-    margin-top:10px;
-    padding:9px 16px;
+    margin-top:8px;
+    padding:8px 14px;
     background:#25D366;
     color:#fff;
     border-radius:25px;
-    font-size:14px;
+    font-size:13px;
     font-weight:bold;
 }
 
@@ -282,200 +280,45 @@ nav a:hover{
 }
 
 
-/* SOCIAL ICONS */
+/* =========================
+   SOCIAL ICONS
+========================= */
 
 .social-links{
     display:flex;
-    gap:8px;
-    margin-top:14px;
+    gap:7px;
+    margin-top:12px;
 }
 
 .social-links a{
-    width:38px;
-    height:38px;
+    width:34px;
+    height:34px;
     border-radius:50%;
     display:flex;
     justify-content:center;
     align-items:center;
     background:#fff;
     color:#0b6e2f;
-    font-size:17px;
+    font-size:15px;
 }
 
 
-/* COPYRIGHT */
+/* =========================
+   COPYRIGHT
+========================= */
 
 .footer-bottom{
     max-width:1100px;
-    margin:25px auto 0;
-    padding-top:15px;
+    margin:20px auto 0;
+    padding-top:12px;
     border-top:1px solid rgba(255,255,255,.18);
     text-align:center;
 }
 
 .footer-bottom p{
     color:#ccc;
-    font-size:12px;
+    font-size:11px;
     line-height:1.5;
-}
-
-.footer-bottom span{
-    color:#D4AF37;
-}
-
-
-/* MOBILE */
-
-@media(max-width:700px){
-
-    .footer{
-        margin-top:35px;
-        padding:30px 18px 12px;
-    }
-
-    .footer-container{
-        grid-template-columns:1fr 1fr;
-        gap:25px 18px;
-    }
-
-    /* About section takes full width */
-
-    .footer-section:first-child{
-        grid-column:1 / -1;
-    }
-
-    .footer-section h3{
-        font-size:18px;
-        margin-bottom:10px;
-    }
-
-    .footer-section p{
-        font-size:13px;
-        line-height:1.5;
-    }
-
-    .footer-section ul li{
-        margin-bottom:7px;
-    }
-
-    .footer-section ul li a{
-        font-size:13px;
-    }
-
-    .footer-logo svg{
-        width:45px;
-        height:45px;
-    }
-
-    .footer-logo h2{
-        font-size:16px;
-    }
-
-    .footer-whatsapp{
-        padding:8px 14px;
-        font-size:13px;
-    }
-
-    .social-links{
-        margin-top:10px;
-    }
-
-    .social-links a{
-        width:34px;
-        height:34px;
-        font-size:15px;
-    }
-
-    .footer-bottom{
-        margin-top:20px;
-        padding-top:12px;
-    }
-
-    .footer-bottom p{
-        font-size:11px;
-    }
-       }
-
-
-/* FOOTER LOGO */
-
-.footer-logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    margin-bottom:15px;
-}
-
-.footer-logo svg{
-    width:65px;
-    height:65px;
-}
-
-.footer-logo h2{
-    font-size:20px;
-    color:#fff;
-}
-
-
-/* FOOTER CONTACT BUTTON */
-
-.footer-whatsapp{
-    display:inline-block;
-    margin-top:15px;
-    padding:12px 20px;
-    background:#25D366;
-    color:#fff;
-    border-radius:30px;
-    font-weight:bold;
-}
-
-.footer-whatsapp:hover{
-    background:#1ebe5d;
-}
-
-
-/* SOCIAL ICONS */
-
-.social-links{
-    display:flex;
-    gap:10px;
-    margin-top:20px;
-}
-
-.social-links a{
-    width:42px;
-    height:42px;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:#fff;
-    color:#0b6e2f;
-    font-size:20px;
-    transition:.3s;
-}
-
-.social-links a:hover{
-    background:#D4AF37;
-    color:#fff;
-    transform:translateY(-3px);
-}
-
-
-/* COPYRIGHT */
-
-.footer-bottom{
-    max-width:1100px;
-    margin:40px auto 0;
-    padding-top:20px;
-    border-top:1px solid rgba(255,255,255,.2);
-    text-align:center;
-}
-
-.footer-bottom p{
-    color:#ddd;
-    font-size:14px;
-    line-height:1.6;
 }
 
 .footer-bottom span{
@@ -510,13 +353,69 @@ nav a:hover{
         font-size:18px;
     }
 
-    .footer-container{
-        grid-template-columns:1fr;
-        gap:35px;
+    .footer{
+        margin-top:30px;
+        padding:25px 16px 10px;
     }
 
-    .footer{
-        padding:40px 20px 20px;
+    .footer-container{
+        grid-template-columns:1fr 1fr;
+        gap:22px 15px;
+    }
+
+    .footer-section:first-child{
+        grid-column:1 / -1;
+    }
+
+    .footer-section h3{
+        font-size:17px;
+        margin-bottom:9px;
+    }
+
+    .footer-section p{
+        font-size:12px;
+        line-height:1.45;
+    }
+
+    .footer-section ul li{
+        margin-bottom:6px;
+    }
+
+    .footer-section ul li a{
+        font-size:12px;
+    }
+
+    .footer-logo svg{
+        width:42px;
+        height:42px;
+    }
+
+    .footer-logo h2{
+        font-size:15px;
+    }
+
+    .footer-whatsapp{
+        padding:7px 12px;
+        font-size:12px;
+    }
+
+    .social-links{
+        margin-top:9px;
+    }
+
+    .social-links a{
+        width:32px;
+        height:32px;
+        font-size:14px;
+    }
+
+    .footer-bottom{
+        margin-top:17px;
+        padding-top:10px;
+    }
+
+    .footer-bottom p{
+        font-size:10px;
     }
 
 }
@@ -557,9 +456,7 @@ nav a:hover{
 <div class="logo">
 
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 800 800"
-     width="70"
-     height="70">
+viewBox="0 0 800 800">
 
 <defs>
 
@@ -587,7 +484,6 @@ y2="100%">
 
 </defs>
 
-
 <circle
 cx="400"
 cy="400"
@@ -596,13 +492,11 @@ fill="white"
 stroke="url(#ring)"
 stroke-width="20"/>
 
-
 <path
 d="M400 120
 C455 150 470 205 400 240
 C330 205 345 150 400 120Z"
 fill="#0F8A4B"/>
-
 
 <line
 x1="400"
@@ -612,7 +506,6 @@ y2="235"
 stroke="white"
 stroke-width="5"/>
 
-
 <circle
 cx="400"
 cy="300"
@@ -620,7 +513,6 @@ r="95"
 fill="url(#globe)"
 stroke="#0F8A4B"
 stroke-width="6"/>
-
 
 <ellipse
 cx="400"
@@ -631,7 +523,6 @@ fill="none"
 stroke="white"
 stroke-width="2"/>
 
-
 <ellipse
 cx="400"
 cy="300"
@@ -641,7 +532,6 @@ fill="none"
 stroke="white"
 stroke-width="2"/>
 
-
 <line
 x1="305"
 y1="300"
@@ -649,7 +539,6 @@ x2="495"
 y2="300"
 stroke="white"
 stroke-width="2"/>
-
 
 <line
 x1="320"
@@ -659,7 +548,6 @@ y2="265"
 stroke="white"
 stroke-width="2"/>
 
-
 <line
 x1="320"
 y1="335"
@@ -667,7 +555,6 @@ x2="480"
 y2="335"
 stroke="white"
 stroke-width="2"/>
-
 
 <path
 d="M250 430
@@ -677,7 +564,6 @@ fill="none"
 stroke="#0F8A4B"
 stroke-width="18"
 stroke-linecap="round"/>
-
 
 <path
 d="M400 410
@@ -693,11 +579,9 @@ fill="#D4AF37"/>
 
 </div>
 
-
 <div class="menu-btn" onclick="menu()">☰</div>
 
 </header>
-
 
 
 <!-- =========================
@@ -707,29 +591,18 @@ fill="#D4AF37"/>
 <nav id="nav">
 
 <a href="index.html">🏠 Home</a>
-
 <a href="our-story.html">📖 Our Story</a>
-
 <a href="projects.html">❤️ Projects</a>
-
 <a href="gallery.html">🖼 Gallery</a>
-
 <a href="team.html">👥 Team</a>
-
 <a href="events.html">🎉 Events</a>
-
 <a href="news.html">📰 News</a>
-
 <a href="partners.html">🤝 Partners</a>
-
 <a href="ways-to-help.html">💚 Ways to Help</a>
-
 <a href="contact.html">📞 Contact</a>
-
 <a href="policies.html">📜 Policies</a>
 
 </nav>
-
 
 
 <!-- =========================
@@ -747,15 +620,14 @@ Juice World Foundation
 Giving Hope, Love and a Better Future to Every Child.
 </p>
 
-
 <a
 class="btn whatsapp"
-href="https://wa.me/256745688224">
+href="https://wa.me/256745688224"
+target="_blank">
 
 💬 Contact Us on WhatsApp
 
 </a>
-
 
 <a
 class="btn donate"
@@ -766,7 +638,6 @@ href="donate.html">
 </a>
 
 </section>
-
 
 
 <!-- =========================
@@ -784,7 +655,6 @@ Juice World Foundation Uganda is a Christian, God-fearing community organisation
 </p>
 
 </section>
-
 
 
 <!-- =========================
@@ -846,32 +716,38 @@ fill="#D4AF37"/>
 
 </svg>
 
-<h2>Juice World<br>Foundation Uganda</h2>
+<h2>
+Juice World<br>
+Foundation Uganda
+</h2>
 
 </div>
-
 
 <p>
 Giving Hope, Love and a Better Future to Every Child.
 </p>
 
-<p style="margin-top:12px;">
+<p>
 Together, we can make a difference in the lives of vulnerable children and families.
 </p>
 
-
 <div class="social-links">
 
-<a href="https://wa.me/256745688224">💬</a>
+<a href="https://wa.me/256745688224" target="_blank">
+💬
+</a>
 
-<a href="contact.html">📞</a>
+<a href="contact.html">
+📞
+</a>
 
-<a href="gallery.html">📸</a>
+<a href="gallery.html">
+📸
+</a>
 
 </div>
 
 </div>
-
 
 
 <!-- QUICK LINKS -->
@@ -906,10 +782,13 @@ Together, we can make a difference in the lives of vulnerable children and famil
 <a href="contact.html">📞 Contact Us</a>
 </li>
 
+<li>
+<a href="policies.html">📜 Policies</a>
+</li>
+
 </ul>
 
 </div>
-
 
 
 <!-- CONTACT -->
@@ -922,18 +801,18 @@ Together, we can make a difference in the lives of vulnerable children and famil
 📍 Uganda
 </p>
 
-<p style="margin-top:10px;">
+<p>
 📱 +256 745 688224
 </p>
 
-<p style="margin-top:10px;">
+<p>
 💚 We are here to serve our community.
 </p>
 
-
 <a
 href="https://wa.me/256745688224"
-class="footer-whatsapp">
+class="footer-whatsapp"
+target="_blank">
 
 💬 WhatsApp Us
 
@@ -945,17 +824,17 @@ class="footer-whatsapp">
 </div>
 
 
-
 <!-- FOOTER BOTTOM -->
 
 <div class="footer-bottom">
 
 <p>
-© 2026 <span>Juice World Foundation Uganda</span>.
+© 2026
+<span>Juice World Foundation Uganda</span>.
 All Rights Reserved.
 </p>
 
-<p style="margin-top:8px;">
+<p>
 Giving Hope • Love • A Better Future
 </p>
 
@@ -963,11 +842,6 @@ Giving Hope • Love • A Better Future
 
 </footer>
 
-
-
-<!-- =========================
-     JAVASCRIPT
-========================= -->
 
 <script>
 
@@ -981,7 +855,6 @@ document
 }
 
 </script>
-
 
 </body>
 </html>
