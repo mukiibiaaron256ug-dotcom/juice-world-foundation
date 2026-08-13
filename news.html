@@ -4,209 +4,116 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>News & Updates | Juice World Foundation Uganda</title>
+<meta name="description" content="Follow the latest activities and announcements from Juice World Foundation Uganda.">
+<link rel="icon" href="images/logo.png">
+<link rel="stylesheet" href="assets/style.css">
 
-<style>
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#f4f7f4;
-color:#333;
-}
-
-header{
-background:#0b6e2f;
-color:white;
-text-align:center;
-padding:60px 20px;
-}
-
-.container{
-max-width:1000px;
-margin:auto;
-padding:30px;
-}
-
-.news{
-background:white;
-padding:20px;
-margin-bottom:20px;
-border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,.1);
-}
-
-.news h2{
-color:#0b6e2f;
-margin-top:0;
-}
-
-.date{
-color:#777;
-font-size:14px;
-margin-bottom:10px;
-}
-
-.button{
-display:inline-block;
-background:#0b6e2f;
-color:white;
-padding:12px 20px;
-text-decoration:none;
-border-radius:6px;
-margin-top:15px;
-}
-
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
-
-/* === Shared mobile hamburger navigation === */
-.site-menu-btn{
-    display:block;
-    border:0;
-    background:transparent;
-    color:#fff;
-    font-size:32px;
-    line-height:1;
-    cursor:pointer;
-    padding:6px 8px;
-}
-.site-nav{
-    display:none;
-    background:#fff;
-    box-shadow:0 6px 20px rgba(0,0,0,.14);
-    position:relative;
-    z-index:998;
-}
-.site-nav.open{display:block}
-.site-nav a{
-    display:block;
-    padding:15px 18px;
-    color:#0b6e2f;
-    text-decoration:none;
-    font-weight:700;
-    border-bottom:1px solid #eee;
-}
-.site-nav a:hover{background:#f4f7f4;color:#D4AF37}
-
-</style>
-
-<style>
-
-/* === Juice World Foundation shared navigation === */
-.site-header{
-    background:#0b6e2f;
-    color:#fff;
-    min-height:72px;
-    padding:12px 18px;
-    display:flex;
-    align-items:center;
-    justify-content:flex-end;
-    position:sticky;
-    top:0;
-    z-index:9999;
-}
-.site-menu-btn{
-    width:50px;
-    height:50px;
-    border:1px solid rgba(212,175,55,.65);
-    border-radius:12px;
-    background:#075a27;
-    color:#fff;
-    font-size:28px;
-    line-height:1;
-    cursor:pointer;
-    box-shadow:0 3px 10px rgba(0,0,0,.18);
-}
-.site-menu-btn:active{
-    transform:scale(.96);
-    background:#0b6e2f;
-}
-.site-nav{
-    display:none;
-    background:#fff;
-    box-shadow:0 6px 20px rgba(0,0,0,.15);
-    position:relative;
-    z-index:9998;
-}
-.site-nav.open{display:block}
-.site-nav a{
-    display:block;
-    padding:16px 18px;
-    color:#0b6e2f;
-    text-decoration:none;
-    font-weight:700;
-    border-bottom:1px solid #eee;
-}
-.site-nav a:hover{
-    background:#f4f7f4;
-    color:#D4AF37;
-}
-
-</style>
 </head>
-
 <body>
-<header class="site-header"><button class="site-menu-btn" onclick="toggleSiteMenu()" aria-label="Open navigation menu" aria-controls="siteNav">☰</button></header>
-
-<nav class="site-nav" id="siteNav">
-<a href="index.html">🏠 Home</a>
-<a href="our-story.html">📖 Our Story</a>
-<a href="projects.html">❤️ Projects</a>
-<a href="gallery.html">🖼 Gallery</a>
-<a href="team.html">👥 Team</a>
-<a href="events.html">🎉 Events</a>
-<a href="news.html">📰 News</a>
-<a href="partners.html">🤝 Partners</a>
-<a href="ways-to-help.html">💚 Ways to Help</a>
-<a href="contact.html">📞 Contact</a>
-<a href="policies.html">📜 Policies</a>
+<header class="site">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Juice World Foundation Uganda emblem">
+      <span class="brand-text"><strong>Juice World Foundation</strong><span>Uganda</span></span>
+    </a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="nav-scrim"></div>
+<nav class="site-nav">
+  <button class="nav-close" aria-label="Close menu">&times;</button>
+  <a href="index.html">Home</a>
+<a href="our-story.html">Our Story</a>
+<a href="projects.html">Projects</a>
+<a href="impact.html">Impact</a>
+<a href="gallery.html">Gallery</a>
+<a href="team.html">Team</a>
+<a href="events.html">Events</a>
+<a href="news.html" class="current">News</a>
+<a href="partners.html">Partners</a>
+<a href="ways-to-help.html">Ways to Help</a>
+<a href="contact.html">Contact</a>
+  <a href="volunteer.html">Volunteer</a>
+  <a href="become-a-sponsor.html">Become a Sponsor</a>
+  <a href="faq.html">FAQ</a>
 </nav>
 
-<header>
-<h1>News & Updates</h1>
-<p>Follow our latest activities and announcements.</p>
-</header>
+<section class="page-header">
+  <div class="page-header-inner">
+    <span class="breadcrumb">News &amp; Updates</span>
+    <h1>Follow our latest activities and announcements.</h1>
+    <p>The latest from the foundation — more stories to come as our work grows.</p>
+  </div>
+</section>
+<div class="sunray"></div>
+<section class="block">
+  <div class="wrap">
+    <div class="grid grid-2">
+      <div class="card">
+        <span class="tag">August 2026</span>
+        <h3 style="margin-top:12px">Welcome to Our Website</h3>
+        <p>We are excited to launch the official Juice World Foundation Uganda website. Thank you to everyone supporting our mission to help vulnerable children.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Stay Connected</span>
+        <h3 style="margin-top:12px">More Updates Coming Soon</h3>
+        <p>As our foundation grows, we will share news about community activities, donations, events, and success stories here.</p>
+      </div>
+    </div>
+    <a class="btn btn-green" href="index.html" style="margin-top:36px">&larr; Back to Home</a>
+  </div>
+</section>
 
-<div class="container">
-
-<div class="news">
-<h2>Welcome to Our Website</h2>
-<p class="date">August 2026</p>
-<p>
-We are excited to launch the official Juice World Foundation Uganda website. Thank you to everyone supporting our mission to help vulnerable children.
-</p>
-</div>
-
-<div class="news">
-<h2>More Updates Coming Soon</h2>
-<p class="date">Stay Connected</p>
-<p>
-As our foundation grows, we will share news about community activities, donations, events, and success stories here.
-</p>
-</div>
-
-<a class="button" href="index.html">Back to Home</a>
-
-</div>
-
-<footer>
-<p>© 2026 Juice World Foundation Uganda</p>
+<footer class="site">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Juice World Foundation Uganda emblem">
+        <strong>Juice World Foundation<br>Uganda</strong>
+      </div>
+      <p>Giving Hope, Love and a Better Future to Every Child &mdash; a Christian, community-based foundation serving vulnerable children and families in Wakiso District, Uganda.</p>
+      <a class="wa-pill" href="https://wa.me/256745688224">&#128172; Chat on WhatsApp</a>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="our-story.html">Our Story</a></li>
+        <li><a href="projects.html">Our Projects</a></li>
+        <li><a href="impact.html">Our Impact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="success-stories.html">Success Stories</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Get Involved</h4>
+      <ul>
+        <li><a href="ways-to-help.html">Ways to Help</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="become-a-sponsor.html">Become a Sponsor</a></li>
+        <li><a href="partners.html">Our Partners</a></li>
+        <li><a href="events.html">Events Calendar</a></li>
+        <li><a href="news.html">News &amp; Updates</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Trust &amp; Contact</h4>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="policies.html">Our Policies</a></li>
+        <li><a href="child-safeguarding.html">Child Safeguarding</a></li>
+        <li><a href="financial-transparency.html">Financial Transparency</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 <strong>Juice World Foundation Uganda</strong>. All Rights Reserved.</span>
+    <span>Giving Hope &bull; Love &bull; A Better Future</span>
+  </div>
 </footer>
-
-
-
-
-
-<script>
-function toggleSiteMenu(){
-    const nav=document.getElementById('siteNav');
-    if(nav) nav.classList.toggle('open');
-}
-</script>
-
+<script src="assets/main.js"></script>
 </body>
 </html>
