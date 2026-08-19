@@ -19,9 +19,55 @@ nav{display:none;background:white;box-shadow:0 8px 20px rgba(0,0,0,.15);position
 @media(max-width:850px){.hero-slider{height:560px}.hero h1{font-size:46px}.welcome{margin:30px 18px;grid-template-columns:1fr;padding:28px}.features{grid-template-columns:1fr;margin-bottom:30px}.footer-container{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){header{padding:9px 15px}.logo svg{width:50px;height:50px}.logo h2{font-size:17px}.hero-slider{height:560px}.hero-content{padding:55px 24px}.hero h1{font-size:39px}.hero p{font-size:18px}.arrow{width:40px;height:40px;font-size:24px}.prev{left:10px}.next{right:10px}.footer-container{grid-template-columns:1fr 1fr;gap:22px 16px}.footer-brand{grid-column:1/-1}}
 
+/* === Shared mobile hamburger navigation === */
+.site-menu-btn{
+    display:block;
+    border:0;
+    background:transparent;
+    color:#fff;
+    font-size:32px;
+    line-height:1;
+    cursor:pointer;
+    padding:6px 8px;
+}
+.site-nav{
+    display:none;
+    background:#fff;
+    box-shadow:0 6px 20px rgba(0,0,0,.14);
+    position:relative;
+    z-index:998;
+}
+.site-nav.open{display:block}
+.site-nav a{
+    display:block;
+    padding:15px 18px;
+    color:#0b6e2f;
+    text-decoration:none;
+    font-weight:700;
+    border-bottom:1px solid #eee;
+}
+.site-nav a:hover{background:#f4f7f4;color:#D4AF37}
+
 </style>
 </head>
 <body>
+<button class="site-menu-btn" onclick="toggleSiteMenu()" aria-label="Open navigation menu" aria-controls="siteNav">☰</button>
+
+<nav class="site-nav" id="siteNav">
+<a href="index.html">🏠 Home</a>
+<a href="our-story.html">📖 Our Story</a>
+<a href="projects.html">❤️ Projects</a>
+<a href="gallery.html">🖼 Gallery</a>
+<a href="team.html">👥 Team</a>
+<a href="events.html">🎉 Events</a>
+<a href="news.html">📰 News</a>
+<a href="partners.html">🤝 Partners</a>
+<a href="ways-to-help.html">💚 Ways to Help</a>
+<a href="contact.html">📞 Contact</a>
+<a href="policies.html">📜 Policies</a>
+</nav>
+
+
 <header>
 <div class="logo">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"><defs><linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0F8A4B"/><stop offset="100%" stop-color="#D4AF37"/></linearGradient><linearGradient id="globe" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#5BC0FF"/><stop offset="100%" stop-color="#1565C0"/></linearGradient></defs><circle cx="400" cy="400" r="340" fill="white" stroke="url(#ring)" stroke-width="20"/><path d="M400 120 C455 150 470 205 400 240 C330 205 345 150 400 120Z" fill="#0F8A4B"/><line x1="400" y1="130" x2="400" y2="235" stroke="white" stroke-width="5"/><circle cx="400" cy="300" r="95" fill="url(#globe)" stroke="#0F8A4B" stroke-width="6"/><ellipse cx="400" cy="300" rx="70" ry="95" fill="none" stroke="white" stroke-width="2"/><ellipse cx="400" cy="300" rx="40" ry="95" fill="none" stroke="white" stroke-width="2"/><line x1="305" y1="300" x2="495" y2="300" stroke="white" stroke-width="2"/><line x1="320" y1="265" x2="480" y2="265" stroke="white" stroke-width="2"/><line x1="320" y1="335" x2="480" y2="335" stroke="white" stroke-width="2"/><path d="M250 430 C300 365 350 355 400 390 C450 355 500 365 550 430" fill="none" stroke="#0F8A4B" stroke-width="18" stroke-linecap="round"/><path d="M400 410 C380 385 345 392 345 425 C345 455 400 485 400 485 C400 485 455 455 455 425 C455 392 420 385 400 410Z" fill="#D4AF37"/></svg>
@@ -32,7 +78,7 @@ nav{display:none;background:white;box-shadow:0 8px 20px rgba(0,0,0,.15);position
 <section class="hero-slider">
 <div class="slide slide1 active"></div><div class="slide slide2"></div><div class="slide slide3"></div>
 <button class="arrow prev" onclick="changeSlide(-1)">‹</button><button class="arrow next" onclick="changeSlide(1)">›</button>
-<div class="hero-content"><div class="badge">Welcome to</div><h1>Juice World Foundation <span>Uganda</span> 💚</h1><p>Giving Hope, Love and a Better Future to Every Child.</p><div class="hero-buttons"><a class="btn whatsapp" href="https://wa.me/256745688224">💬 Contact Us on WhatsApp</a><a class="btn donate" href="donate.html">❤️ Donate Now</a></div></div>
+<div class="hero-content"><div class="badge">Welcome to</div><h1>Juice World Foundation <span>Uganda</span> 💚</h1><p>Giving Hope, Love and a Better Future to Every Child.</p><div class="hero-buttons"><a class="btn whatsapp" href="https://wa.me/256793017197">💬 Contact Us on WhatsApp</a><a class="btn donate" href="donate.html">❤️ Donate Now</a></div></div>
 <div class="dots"><span class="dot active" onclick="goToSlide(0)"></span><span class="dot" onclick="goToSlide(1)"></span><span class="dot" onclick="goToSlide(2)"></span></div>
 </section>
 <section class="welcome"><div><h2>Welcome to Juice World Foundation Uganda</h2><p>Juice World Foundation Uganda is a Christian, God-fearing community organisation committed to bringing hope, love and practical support to vulnerable children and families throughout Uganda.</p><a class="learn" href="our-story.html">Learn more about us →</a></div><div class="welcome-image"></div></section>
@@ -40,16 +86,22 @@ nav{display:none;background:white;box-shadow:0 8px 20px rgba(0,0,0,.15);position
 <footer class="footer"><div class="footer-container">
 <div><div class="footer-brand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"><circle cx="400" cy="400" r="340" fill="white" stroke="#D4AF37" stroke-width="20"/><path d="M400 120 C455 150 470 205 400 240 C330 205 345 150 400 120Z" fill="#0F8A4B"/><circle cx="400" cy="300" r="95" fill="#1565C0" stroke="#0F8A4B" stroke-width="6"/><path d="M250 430 C300 365 350 355 400 390 C450 355 500 365 550 430" fill="none" stroke="#0F8A4B" stroke-width="18" stroke-linecap="round"/><path d="M400 410 C380 385 345 392 345 425 C345 455 400 485 400 485 C400 485 455 455 455 425 C455 392 420 385 400 410Z" fill="#D4AF37"/></svg><strong>Juice World Foundation Uganda</strong></div><p>Giving Hope, Love and a Better Future to Every Child.</p></div>
 <div><h3>Quick Links</h3><ul><li><a href="partners.html">🤝 Our Partners</a></li><li><a href="ways-to-help.html">💚 Ways to Help</a></li></ul></div>
-<div><h3>Contact</h3><p>📍 Uganda</p><p>📱 +256 745 688224</p><a class="footer-whatsapp" href="https://wa.me/256745688224">💬 WhatsApp Us</a></div>
+<div><h3>Contact</h3><p>📍 Uganda</p><p>📱 0793017197</p><a class="footer-whatsapp" href="https://wa.me/256793017197">💬 WhatsApp Us</a></div>
 <div><h3>Information</h3><ul><li><a href="policies.html">📜 Policies</a></li></ul></div>
 </div><div class="footer-bottom">
 <p>© 2026 <strong>Juice World Foundation Uganda</strong>. All Rights Reserved.</p>
 <p>Giving Hope • Love • A Better Future</p>
-</div></footer>
+</div><p class="founder-credit">Founder: <strong>MUKIIBI AARON</strong> · 0793017197</p></footer>
 <script>
 let currentSlide=0;const slides=document.querySelectorAll('.slide'),dots=document.querySelectorAll('.dot');function showSlide(i){currentSlide=(i+slides.length)%slides.length;slides.forEach((s,n)=>s.classList.toggle('active',n===currentSlide));dots.forEach((d,n)=>d.classList.toggle('active',n===currentSlide))}function changeSlide(d){showSlide(currentSlide+d)}function goToSlide(i){showSlide(i)}setInterval(()=>showSlide(currentSlide+1),5000);function menu(){document.getElementById('nav').classList.toggle('active')}
 </script>
 
+<script>
+function toggleSiteMenu(){
+    var nav=document.getElementById('siteNav');
+    if(nav) nav.classList.toggle('open');
+}
+</script>
 
-
+<div class="floating-contact"><a href="https://wa.me/256793017197" aria-label="WhatsApp MUKIIBI Aaron">💬</a></div>
 </body></html>
