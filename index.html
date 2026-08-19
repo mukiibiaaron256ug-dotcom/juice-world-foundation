@@ -6,185 +6,87 @@
 <title>Juice World Foundation Uganda</title>
 <meta name="description" content="Giving Hope, Love and a Better Future to Every Child">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}html{scroll-behavior:smooth}body{background:#f4f7f4;color:#333;overflow-x:hidden}a{text-decoration:none}
-header{background:#0b6e2f;min-height:78px;padding:10px 22px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1000;box-shadow:0 3px 15px rgba(0,0,0,.18)}
-.logo{display:flex;align-items:center;gap:10px;color:white}.logo svg{width:58px;height:58px;flex-shrink:0}.logo h2{font-size:21px;line-height:1.1}.logo h2 span{color:#ffd447}.menu-btn{font-size:35px;color:white;cursor:pointer;line-height:1}
-nav{display:none;background:white;box-shadow:0 8px 20px rgba(0,0,0,.15);position:relative;z-index:999}nav.active{display:block}nav a{display:block;padding:15px 20px;color:#0b6e2f;font-weight:bold;border-bottom:1px solid #eee}nav a:hover{background:#f2f8f3;color:#c99d20}
-.hero-slider{position:relative;height:560px;overflow:hidden;background:#0b6e2f}.slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1s ease}.slide.active{opacity:1}.slide:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,35,12,.82),rgba(0,35,12,.48),rgba(0,0,0,.12))}.slide1{background-image:url("https://commons.wikimedia.org/wiki/Special:FilePath/Children_Playing_uganda.jpg")}.slide2{background-image:url("https://commons.wikimedia.org/wiki/Special:FilePath/African_kids_possing_for_a_Photo.jpg")}.slide3{background-image:url("https://commons.wikimedia.org/wiki/Special:FilePath/Ugandan_school_Children.jpg")}
-.hero-content{position:relative;z-index:2;max-width:1100px;height:100%;margin:auto;padding:80px 28px;display:flex;flex-direction:column;justify-content:center;color:white}.badge{width:max-content;background:#0b6e2f;padding:10px 18px;border-radius:30px;font-weight:bold;margin-bottom:18px}.hero h1{font-size:58px;line-height:1.02;max-width:760px;margin-bottom:18px}.hero h1 span{color:#ffd447}.hero p{font-size:21px;line-height:1.5;max-width:650px;margin-bottom:28px}.hero-buttons{display:flex;gap:14px;flex-wrap:wrap}.btn{display:inline-block;padding:15px 24px;border-radius:35px;font-weight:bold;font-size:17px;transition:.25s}.btn:hover{transform:translateY(-2px)}.whatsapp{background:#25d366;color:white}.donate{background:white;color:#0b6e2f}
-.dots{position:absolute;z-index:4;bottom:25px;left:50%;transform:translateX(-50%);display:flex;gap:9px}.dot{width:11px;height:11px;border-radius:50%;background:white;opacity:.7;cursor:pointer}.dot.active{background:#25d366;opacity:1}.arrow{position:absolute;z-index:5;top:50%;transform:translateY(-50%);width:48px;height:48px;border:1px solid rgba(255,255,255,.5);border-radius:50%;background:rgba(0,80,30,.55);color:white;font-size:30px;cursor:pointer}.prev{left:20px}.next{right:20px}
-.welcome{max-width:1100px;margin:45px auto;padding:38px;background:white;border-radius:24px;box-shadow:0 8px 28px rgba(0,0,0,.1);display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}.welcome h2{color:#0b6e2f;font-size:32px;margin-bottom:14px}.welcome p{font-size:17px;line-height:1.8;color:#555}.learn{display:inline-block;margin-top:18px;color:#0b6e2f;font-weight:bold}.welcome-image{min-height:220px;border-radius:20px;background:url("https://commons.wikimedia.org/wiki/Special:FilePath/Children_smiling.jpg") center/cover}
-.features{max-width:1100px;margin:0 auto 50px;padding:0 20px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.feature{background:white;padding:28px 22px;border-radius:18px;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.08)}.feature-icon{font-size:38px;margin-bottom:10px}.feature h3{color:#0b6e2f;margin-bottom:8px;font-size:20px}.feature p{font-size:14px;line-height:1.6;color:#666}
-.footer{background:linear-gradient(180deg,#075a2a 0%,#043d1a 100%);color:white;padding:32px 20px 14px;margin-top:35px}.footer-container{max-width:1100px;margin:auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:28px}.footer h3{color:#d4af37;font-size:18px;margin-bottom:12px}.footer p,.footer a{font-size:13px;line-height:1.6;color:#e5e5e5}.footer a:hover{color:#d4af37}.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px}.footer-brand svg{width:48px;height:48px}.footer-brand strong{font-size:16px;color:white}.footer ul{list-style:none}.footer li{margin-bottom:6px}.footer-bottom{max-width:1100px;margin:22px auto 0;padding-top:13px;border-top:1px solid rgba(255,255,255,.18);text-align:center}.footer-bottom span{color:#d4af37}.footer-whatsapp{display:inline-block;margin-top:9px;background:#25d366!important;color:white!important;padding:8px 14px;border-radius:22px;font-weight:bold}
-@media(max-width:850px){.hero-slider{height:560px}.hero h1{font-size:46px}.welcome{margin:30px 18px;grid-template-columns:1fr;padding:28px}.features{grid-template-columns:1fr;margin-bottom:30px}.footer-container{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){header{padding:9px 15px}.logo svg{width:50px;height:50px}.logo h2{font-size:17px}.hero-slider{height:560px}.hero-content{padding:55px 24px}.hero h1{font-size:39px}.hero p{font-size:18px}.arrow{width:40px;height:40px;font-size:24px}.prev{left:10px}.next{right:10px}.footer-container{grid-template-columns:1fr 1fr;gap:22px 16px}.footer-brand{grid-column:1/-1}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#fff;background:#04150b;min-height:100vh;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-3;background:radial-gradient(circle at 50% 20%,#0d6b36 0, #061e10 42%,#020904 100%)}
+.stars,.stars2{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:-1}
+.stars i,.stars2 i{position:absolute;border-radius:50%;background:#fff;box-shadow:0 0 10px 2px rgba(255,255,255,.8);animation:twinkle 2.5s infinite ease-in-out}
+.stars i{width:2px;height:2px}.stars2 i{width:1px;height:1px;animation-duration:4s;opacity:.7}
+@keyframes twinkle{0%,100%{opacity:.2;transform:scale(.6)}50%{opacity:1;transform:scale(1.7)}}
 
-/* === Shared mobile hamburger navigation === */
-.site-menu-btn{
-    display:block;
-    border:0;
-    background:transparent;
-    color:#fff;
-    font-size:32px;
-    line-height:1;
-    cursor:pointer;
-    padding:6px 8px;
-}
-.site-nav{
-    display:none;
-    background:#fff;
-    box-shadow:0 6px 20px rgba(0,0,0,.14);
-    position:relative;
-    z-index:998;
-}
-.site-nav.open{display:block}
-.site-nav a{
-    display:block;
-    padding:15px 18px;
-    color:#0b6e2f;
-    text-decoration:none;
-    font-weight:700;
-    border-bottom:1px solid #eee;
-}
-.site-nav a:hover{background:#f4f7f4;color:#D4AF37}
+header{position:sticky;top:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:rgba(5,72,30,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(212,175,55,.45);box-shadow:0 8px 25px rgba(0,0,0,.28)}
+.logo{display:flex;align-items:center;gap:10px}.logo img{width:54px;height:54px;border-radius:50%;object-fit:cover;background:#fff}.logo h2{font-size:18px}.logo span{color:#ffd447}
+.menu-btn{width:52px;height:52px;border:1px solid #d4af37;border-radius:16px;background:linear-gradient(145deg,#11813d,#064a24);color:#fff;font-size:30px;cursor:pointer;box-shadow:8px 8px 16px rgba(0,0,0,.35),-3px -3px 8px rgba(255,255,255,.08)}
+.menu-btn:active{transform:translateY(3px);box-shadow:3px 3px 7px rgba(0,0,0,.35)}
+nav{display:none;background:rgba(4,25,13,.98);border-bottom:1px solid #d4af37;box-shadow:0 12px 30px rgba(0,0,0,.4)}
+nav.active{display:block}nav a{display:block;padding:15px 20px;color:#fff;text-decoration:none;font-weight:bold;border-bottom:1px solid rgba(255,255,255,.08)}nav a:hover{color:#ffd447;background:#0b6e2f}
 
+.hero{min-height:calc(100vh - 75px);display:grid;place-items:center;text-align:center;padding:55px 20px;position:relative}
+.hero-card{width:min(900px,100%);padding:42px 24px;border:1px solid rgba(212,175,55,.35);border-radius:32px;background:rgba(2,22,10,.62);backdrop-filter:blur(10px);box-shadow:0 30px 80px rgba(0,0,0,.42)}
+.badge{display:inline-block;padding:9px 17px;border-radius:999px;color:#07190c;background:#ffd447;font-weight:800;box-shadow:0 8px 20px rgba(0,0,0,.3)}
+.hero h1{font-size:clamp(42px,10vw,82px);line-height:.98;margin:22px 0 18px}.hero h1 span{color:#ffd447}
+.hero p{font-size:19px;line-height:1.7;color:#e2eee6;max-width:680px;margin:0 auto 28px}
+.buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.btn{display:inline-block;padding:15px 23px;border-radius:999px;text-decoration:none;font-weight:800;color:#fff;box-shadow:9px 9px 18px rgba(0,0,0,.38),-3px -3px 8px rgba(255,255,255,.06);transform:translateY(0);transition:.2s}
+.btn:hover{transform:translateY(-4px)}.green{background:linear-gradient(145deg,#15964a,#075a29)}.gold{background:linear-gradient(145deg,#f0c83f,#a87508);color:#101006}
 
-/* ===== SHINING STAR BACKGROUND ===== */
-body{
-    position:relative;
-    overflow-x:hidden;
-}
-body::before{
-    content:"";
-    position:fixed;
-    inset:0;
-    z-index:-2;
-    pointer-events:none;
-    background-image:
-      radial-gradient(circle, rgba(255,255,255,.95) 0 1px, transparent 1.7px),
-      radial-gradient(circle, rgba(212,175,55,.8) 0 1px, transparent 1.8px),
-      radial-gradient(circle, rgba(255,255,255,.7) 0 1.2px, transparent 2px);
-    background-size:85px 85px,125px 125px,175px 175px;
-    background-position:10px 20px,35px 70px,70px 10px;
-    animation:starsDrift 18s linear infinite, starsGlow 2.8s ease-in-out infinite alternate;
-}
-body::after{
-    content:"";
-    position:fixed;
-    inset:0;
-    z-index:-1;
-    pointer-events:none;
-    background:
-      radial-gradient(circle at 20% 15%, rgba(212,175,55,.10), transparent 22%),
-      radial-gradient(circle at 80% 35%, rgba(11,110,47,.10), transparent 25%),
-      radial-gradient(circle at 50% 90%, rgba(212,175,55,.08), transparent 25%);
-}
-@keyframes starsDrift{
-    from{background-position:10px 20px,35px 70px,70px 10px}
-    to{background-position:95px 105px,160px 10px,0 180px}
-}
-@keyframes starsGlow{
-    from{opacity:.55}
-    to{opacity:1}
-}
+.section{padding:55px 18px}.container{width:min(1050px,100%);margin:auto}
+.card{padding:30px;border-radius:26px;background:rgba(255,255,255,.075);border:1px solid rgba(212,175,55,.24);box-shadow:14px 14px 35px rgba(0,0,0,.28),-4px -4px 12px rgba(255,255,255,.03);margin-bottom:22px}
+.card h2{color:#ffd447;margin-bottom:14px;font-size:30px}.card p{color:#e1ece5;line-height:1.8;font-size:17px}
+.float-nav{position:fixed;right:16px;bottom:18px;z-index:999;display:flex;flex-direction:column;gap:10px}
+.float-nav a{width:49px;height:49px;border-radius:17px;display:grid;place-items:center;text-decoration:none;color:#fff;font-size:20px;background:linear-gradient(145deg,#138642,#064d25);border:1px solid rgba(212,175,55,.7);box-shadow:9px 9px 18px rgba(0,0,0,.4),-3px -3px 8px rgba(255,255,255,.08);transition:.2s}
+.float-nav a:hover{transform:translateY(-5px) rotate(-2deg);color:#ffd447}
+footer{padding:30px 20px;text-align:center;background:#031109;border-top:1px solid rgba(212,175,55,.35);color:#cddbd1}footer strong{color:#ffd447}
 
-/* ===== FLOATING 3D BUTTONS ===== */
-.btn,
-.footer-whatsapp,
-.social-links a,
-nav a{
-    transform:translateY(0);
-    transition:transform .22s ease, box-shadow .22s ease, background .22s ease;
-}
-.btn{
-    box-shadow:0 8px 0 rgba(0,0,0,.20), 0 14px 24px rgba(0,0,0,.16);
-}
-.btn:hover{
-    transform:translateY(-5px);
-    box-shadow:0 13px 0 rgba(0,0,0,.20), 0 20px 30px rgba(0,0,0,.20);
-}
-.btn:active{
-    transform:translateY(3px);
-    box-shadow:0 4px 0 rgba(0,0,0,.20), 0 8px 15px rgba(0,0,0,.14);
-}
-.footer-whatsapp{
-    box-shadow:0 6px 0 rgba(0,0,0,.22), 0 12px 20px rgba(0,0,0,.15);
-}
-.footer-whatsapp:hover{
-    transform:translateY(-4px);
-    box-shadow:0 10px 0 rgba(0,0,0,.22), 0 17px 26px rgba(0,0,0,.18);
-}
-.social-links a{
-    box-shadow:0 5px 0 rgba(0,0,0,.18), 0 10px 18px rgba(0,0,0,.12);
-}
-.social-links a:hover{
-    transform:translateY(-5px) scale(1.04);
-    box-shadow:0 9px 0 rgba(0,0,0,.18), 0 15px 24px rgba(0,0,0,.16);
-}
-nav a{
-    box-shadow:0 2px 0 rgba(0,0,0,.08);
-}
-nav a:hover{
-    transform:translateX(4px);
-}
-.card{
-    box-shadow:0 10px 0 rgba(6,75,29,.08), 0 14px 30px rgba(0,0,0,.12);
-}
-
+@media(max-width:600px){.logo h2{font-size:16px}.hero-card{padding:32px 18px}.hero p{font-size:17px}.card{padding:24px}}
 </style>
 </head>
 <body>
-<button class="site-menu-btn" onclick="toggleSiteMenu()" aria-label="Open navigation menu" aria-controls="siteNav">☰</button>
-
-<nav class="site-nav" id="siteNav">
-<a href="index.html">🏠 Home</a>
-<a href="our-story.html">📖 Our Story</a>
-<a href="projects.html">❤️ Projects</a>
-<a href="gallery.html">🖼 Gallery</a>
-<a href="team.html">👥 Team</a>
-<a href="events.html">🎉 Events</a>
-<a href="news.html">📰 News</a>
-<a href="partners.html">🤝 Partners</a>
-<a href="ways-to-help.html">💚 Ways to Help</a>
-<a href="contact.html">📞 Contact</a>
-<a href="policies.html">📜 Policies</a>
-</nav>
-
+<div class="stars" id="stars"></div><div class="stars2" id="stars2"></div>
 
 <header>
-<div class="logo">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"><defs><linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0F8A4B"/><stop offset="100%" stop-color="#D4AF37"/></linearGradient><linearGradient id="globe" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#5BC0FF"/><stop offset="100%" stop-color="#1565C0"/></linearGradient></defs><circle cx="400" cy="400" r="340" fill="white" stroke="url(#ring)" stroke-width="20"/><path d="M400 120 C455 150 470 205 400 240 C330 205 345 150 400 120Z" fill="#0F8A4B"/><line x1="400" y1="130" x2="400" y2="235" stroke="white" stroke-width="5"/><circle cx="400" cy="300" r="95" fill="url(#globe)" stroke="#0F8A4B" stroke-width="6"/><ellipse cx="400" cy="300" rx="70" ry="95" fill="none" stroke="white" stroke-width="2"/><ellipse cx="400" cy="300" rx="40" ry="95" fill="none" stroke="white" stroke-width="2"/><line x1="305" y1="300" x2="495" y2="300" stroke="white" stroke-width="2"/><line x1="320" y1="265" x2="480" y2="265" stroke="white" stroke-width="2"/><line x1="320" y1="335" x2="480" y2="335" stroke="white" stroke-width="2"/><path d="M250 430 C300 365 350 355 400 390 C450 355 500 365 550 430" fill="none" stroke="#0F8A4B" stroke-width="18" stroke-linecap="round"/><path d="M400 410 C380 385 345 392 345 425 C345 455 400 485 400 485 C400 485 455 455 455 425 C455 392 420 385 400 410Z" fill="#D4AF37"/></svg>
-<h2>Juice World Foundation <span>Uganda</span></h2>
-</div><div class="menu-btn" onclick="menu()">☰</div>
+  <div class="logo">
+    <img src="images/logo.png" alt="Juice World Foundation Uganda logo">
+    <h2>Juice World Foundation <span>Uganda</span></h2>
+  </div>
+  <button class="menu-btn" onclick="menu()" aria-label="Open navigation">☰</button>
 </header>
-<nav id="nav"><a href="index.html">🏠 Home</a><a href="our-story.html">📖 Our Story</a><a href="projects.html">❤️ Projects</a><a href="gallery.html">🖼 Gallery</a><a href="team.html">👥 Team</a><a href="events.html">🎉 Events</a><a href="news.html">📰 News</a><a href="partners.html">🤝 Partners</a><a href="ways-to-help.html">💚 Ways to Help</a><a href="contact.html">📞 Contact</a><a href="policies.html">📜 Policies</a></nav>
-<section class="hero-slider">
-<div class="slide slide1 active"></div><div class="slide slide2"></div><div class="slide slide3"></div>
-<button class="arrow prev" onclick="changeSlide(-1)">‹</button><button class="arrow next" onclick="changeSlide(1)">›</button>
-<div class="hero-content"><div class="badge">Welcome to</div><h1>Juice World Foundation <span>Uganda</span> 💚</h1><p>Giving Hope, Love and a Better Future to Every Child.</p><div class="hero-buttons"><a class="btn whatsapp" href="https://wa.me/256793017197">💬 Contact Us on WhatsApp</a><a class="btn donate" href="donate.html">❤️ Donate Now</a></div></div>
-<div class="dots"><span class="dot active" onclick="goToSlide(0)"></span><span class="dot" onclick="goToSlide(1)"></span><span class="dot" onclick="goToSlide(2)"></span></div>
+
+<nav id="nav">
+<a href="index.html">🏠 Home</a><a href="our-story.html">📖 Our Story</a><a href="projects.html">❤️ Projects</a><a href="gallery.html">🖼 Gallery</a><a href="team.html">👥 Team</a><a href="events.html">🎉 Events</a><a href="news.html">📰 News</a><a href="partners.html">🤝 Partners</a><a href="ways-to-help.html">💚 Ways to Help</a><a href="contact.html">📞 Contact</a><a href="policies.html">📜 Policies</a>
+</nav>
+
+<main>
+<section class="hero">
+<div class="hero-card">
+<div class="badge">⭐ WELCOME</div>
+<h1>Juice World Foundation <span>Uganda</span></h1>
+<p>Giving Hope, Love and a Better Future to Every Child.</p>
+<div class="buttons">
+<a class="btn green" href="https://wa.me/256793017197">💬 Contact MUKIIBI AARON</a>
+<a class="btn gold" href="donate.html">❤️ Donate Now</a>
+</div>
+</div>
 </section>
-<section class="welcome"><div><h2>Welcome to Juice World Foundation Uganda</h2><p>Juice World Foundation Uganda is a Christian, God-fearing community organisation committed to bringing hope, love and practical support to vulnerable children and families throughout Uganda.</p><a class="learn" href="our-story.html">Learn more about us →</a></div><div class="welcome-image"></div></section>
-<section class="features"><div class="feature"><div class="feature-icon">❤️</div><h3>Our Mission</h3><p>Bringing hope, love and practical support to vulnerable children and families.</p></div><div class="feature"><div class="feature-icon">🤝</div><h3>Our Partners</h3><p>Working together with partners and communities to create a better future.</p></div><div class="feature"><div class="feature-icon">💚</div><h3>Ways to Help</h3><p>Join us through giving, volunteering, partnering or supporting our projects.</p></div></section>
-<footer class="footer"><div class="footer-container">
-<div><div class="footer-brand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"><circle cx="400" cy="400" r="340" fill="white" stroke="#D4AF37" stroke-width="20"/><path d="M400 120 C455 150 470 205 400 240 C330 205 345 150 400 120Z" fill="#0F8A4B"/><circle cx="400" cy="300" r="95" fill="#1565C0" stroke="#0F8A4B" stroke-width="6"/><path d="M250 430 C300 365 350 355 400 390 C450 355 500 365 550 430" fill="none" stroke="#0F8A4B" stroke-width="18" stroke-linecap="round"/><path d="M400 410 C380 385 345 392 345 425 C345 455 400 485 400 485 C400 485 455 455 455 425 C455 392 420 385 400 410Z" fill="#D4AF37"/></svg><strong>Juice World Foundation Uganda</strong></div><p>Giving Hope, Love and a Better Future to Every Child.</p></div>
-<div><h3>Quick Links</h3><ul><li><a href="partners.html">🤝 Our Partners</a></li><li><a href="ways-to-help.html">💚 Ways to Help</a></li></ul></div>
-<div><h3>Contact</h3><p>📍 Uganda</p><p>📱 0793017197</p><a class="footer-whatsapp" href="https://wa.me/256793017197">💬 WhatsApp Us</a></div>
-<div><h3>Information</h3><ul><li><a href="policies.html">📜 Policies</a></li></ul></div>
-</div><div class="footer-bottom">
-<p>© 2026 <strong>Juice World Foundation Uganda</strong>. All Rights Reserved.</p>
-<p>Giving Hope • Love • A Better Future</p>
-</div><p class="founder-credit">Founder: <strong>MUKIIBI AARON</strong> · 0793017197</p></footer>
-<script>
-let currentSlide=0;const slides=document.querySelectorAll('.slide'),dots=document.querySelectorAll('.dot');function showSlide(i){currentSlide=(i+slides.length)%slides.length;slides.forEach((s,n)=>s.classList.toggle('active',n===currentSlide));dots.forEach((d,n)=>d.classList.toggle('active',n===currentSlide))}function changeSlide(d){showSlide(currentSlide+d)}function goToSlide(i){showSlide(i)}setInterval(()=>showSlide(currentSlide+1),5000);function menu(){document.getElementById('nav').classList.toggle('active')}
-</script>
+
+<section class="section"><div class="container">
+<div class="card"><h2>Welcome to Juice World Foundation Uganda</h2><p>We are committed to bringing hope, love and practical support to vulnerable children and families throughout Uganda.</p></div>
+<div class="card"><h2>👤 MUKIIBI AARON — Founder</h2><p>My name is MUKIIBI AARON, founder and developer of Juice World Foundation Uganda. I am passionate about serving vulnerable children and families and building a brighter future for every child.</p><p style="margin-top:10px">📞 0793017197</p></div>
+<div class="card"><h2>✨ Our Mission</h2><p>Bringing hope, love and practical support to vulnerable children and families through care, education, community support and partnership.</p></div>
+</div></section>
+</main>
+
+<div class="float-nav">
+<a href="index.html" title="Home">🏠</a><a href="projects.html" title="Projects">❤️</a><a href="gallery.html" title="Gallery">🖼</a><a href="contact.html" title="Contact">📞</a>
+</div>
+
+<footer><p><strong>Juice World Foundation Uganda</strong></p><p>Giving Hope, Love and a Better Future to Every Child.</p><p>© 2026 Juice World Foundation Uganda</p></footer>
 
 <script>
-function toggleSiteMenu(){
-    var nav=document.getElementById('siteNav');
-    if(nav) nav.classList.toggle('open');
-}
+function menu(){document.getElementById('nav').classList.toggle('active')}
+function makeStars(id,count){const box=document.getElementById(id);for(let i=0;i<count;i++){const s=document.createElement('i');s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=(Math.random()*5)+'s';box.appendChild(s)}}
+makeStars('stars',120);makeStars('stars2',90);
 </script>
-
-<div class="floating-contact"><a href="https://wa.me/256793017197" aria-label="WhatsApp MUKIIBI Aaron">💬</a></div>
-</body></html>
+</body>
+</html>
