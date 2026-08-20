@@ -144,21 +144,53 @@ footer,.footer{position:relative;z-index:1;background:linear-gradient(180deg,#07
 .hero-slider{position:relative;z-index:1;height:560px;overflow:hidden;background:#052516}.slide{background-size:cover;background-position:center}.slide:after{background:linear-gradient(90deg,rgba(0,25,10,.86),rgba(0,35,12,.45),rgba(0,0,0,.15))}.slide1{background-image:url("https://commons.wikimedia.org/wiki/Special:FilePath/Children_Playing_uganda.jpg")}.slide2{background-image:url("https://commons.wikimedia.org/wiki/Special:FilePath/African_kids_possing_for_a_Photo.jpg")}.slide3{background-image:url("https://commons.wikimedia.org/wiki/Special:FilePath/Ugandan_school_Children.jpg")}.welcome-image{background-image:url("https://commons.wikimedia.org/wiki/Special:FilePath/Children_smiling.jpg")!important;background-size:cover;background-position:center}
 /* African children welcome visual: coded as the hero/welcome background above, no image upload required. */
 @media(max-width:600px){.site-header{padding:8px 12px 8px 14px}.brand img{width:46px;height:46px}.brand strong{font-size:15px}.brand small{font-size:9px}.menu-toggle{width:44px;height:44px;font-size:27px}.page-hero{padding:48px 18px 40px}.page-hero p{font-size:16px}.container{margin:22px 14px;padding:22px 17px}.main-content{padding:22px 14px 40px}.hero-slider{height:540px}}
+
+/* === Admin upload panel === */
+.admin-bar{position:relative;z-index:1;max-width:1100px;margin:24px auto 0;padding:0 18px}
+.admin-toggle{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(145deg,#159447,#075b2b);color:#fff;border:1px solid rgba(212,175,55,.5);padding:11px 18px;border-radius:30px;font-weight:800;cursor:pointer;box-shadow:0 6px 14px rgba(0,0,0,.3)}
+.admin-panel{display:none;margin-top:14px;background:rgba(255,255,255,.97);border-radius:18px;padding:20px;box-shadow:0 10px 25px rgba(0,0,0,.15)}
+.admin-panel.open{display:block}
+.admin-panel input[type=password],.admin-panel input[type=file]{width:100%;padding:11px;border-radius:10px;border:1px solid #ccc;margin:8px 0;font-size:15px}
+.admin-panel button{background:#0b6e2f;color:#fff;border:0;padding:11px 20px;border-radius:10px;font-weight:800;cursor:pointer;margin-top:6px}
+.admin-panel .note{font-size:13px;color:#666;margin-top:10px;line-height:1.5}
+.admin-thumb-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.admin-thumb{position:relative;width:90px;height:90px;border-radius:10px;overflow:hidden}
+.admin-thumb img{width:100%;height:100%;object-fit:cover}
+.admin-thumb button{position:absolute;top:2px;right:2px;background:rgba(200,0,0,.85);width:22px;height:22px;padding:0;font-size:13px;line-height:1;border-radius:50%}
 </style></head>
 <body><div aria-hidden="true" class="stars-layer"></div>
 <header class="site-header">
 <a aria-label="Juice World Foundation Uganda home" class="brand" href="index.html">
-<img alt="Juice World Foundation Uganda logo" src="images/logo.png"/>
+<img alt="Juice World Foundation Uganda logo" src="images/logo.svg"/>
 <div><strong>Juice World Foundation Uganda</strong><small>Giving Hope • Love • A Better Future</small></div>
 </a>
 <button aria-expanded="false" aria-label="Open menu" class="menu-toggle" id="siteMenuToggle">☰</button>
 </header>
-<nav class="site-nav" id="siteNav"><a href="index.html">🏠 Home</a><a href="our-story.html">📖 Our Story</a><a href="projects.html">❤️ Projects</a><a href="gallery.html">🖼 Gallery</a><a href="team.html">👥 Team</a><a href="events.html">🎉 Events</a><a href="news.html">📰 News</a><a href="partners.html">🤝 Partners</a><a href="ways-to-help.html">💚 Ways to Help</a><a href="become-a-sponsor.html">⭐ Sponsor</a><a href="volunteer.html">🙌 Volunteer</a><a href="impact.html">🌍 Impact</a><a href="success-stories.html">✨ Success Stories</a><a href="faq.html">❓ FAQ</a><a href="contact.html">📞 Contact</a><a href="policies.html">📜 Policies</a></nav><section class="page-hero"><h1>Gallery</h1></section><main class="main-content"><div class="gallery">
-<img alt="Children" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Children_Playing_uganda.jpg" style="width:100%;height:280px;object-fit:cover;border-radius:18px;display:block;box-shadow:0 10px 25px rgba(0,0,0,.15)"/>
-<img alt="Food Distribution" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/African_kids_possing_for_a_Photo.jpg" style="width:100%;height:280px;object-fit:cover;border-radius:18px;display:block;box-shadow:0 10px 25px rgba(0,0,0,.15)"/>
-<img alt="Community Support" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ugandan_school_Children.jpg" style="width:100%;height:280px;object-fit:cover;border-radius:18px;display:block;box-shadow:0 10px 25px rgba(0,0,0,.15)"/>
-<img alt="Volunteers" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Children_smiling.jpg" style="width:100%;height:280px;object-fit:cover;border-radius:18px;display:block;box-shadow:0 10px 25px rgba(0,0,0,.15)"/>
-<img alt="Children Smiling" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Children_Playing_uganda.jpg" style="width:100%;height:280px;object-fit:cover;border-radius:18px;display:block;box-shadow:0 10px 25px rgba(0,0,0,.15)"/>
+<nav class="site-nav" id="siteNav"><a href="index.html">🏠 Home</a><a href="our-story.html">📖 Our Story</a><a href="projects.html">❤️ Projects</a><a href="gallery.html">🖼 Gallery</a><a href="team.html">👥 Team</a><a href="events.html">🎉 Events</a><a href="news.html">📰 News</a><a href="partners.html">🤝 Partners</a><a href="ways-to-help.html">💚 Ways to Help</a><a href="become-a-sponsor.html">⭐ Sponsor</a><a href="volunteer.html">🙌 Volunteer</a><a href="impact.html">🌍 Impact</a><a href="success-stories.html">✨ Success Stories</a><a href="faq.html">❓ FAQ</a><a href="contact.html">📞 Contact</a><a href="policies.html">📜 Policies</a></nav><section class="page-hero"><h1>Gallery</h1></section>
+
+<div class="admin-bar">
+<button class="admin-toggle" id="adminToggle">🔒 Admin: Add Images</button>
+<div class="admin-panel" id="adminPanel">
+<div id="adminLoginStep">
+<input id="adminPass" placeholder="Enter admin password" type="password"/>
+<button id="adminLoginBtn">Unlock</button>
+<p class="note" id="adminLoginMsg"></p>
+</div>
+<div id="adminUploadStep" style="display:none">
+<label for="adminFile" id="uploadBigBtn" style="display:block;text-align:center;background:#0b6e2f;color:#fff;padding:22px;border-radius:16px;font-weight:800;font-size:17px;cursor:pointer;margin:10px 0">📷 Tap to Choose Photos</label>
+<input accept="image/*" id="adminFile" multiple="" style="display:none" type="file"/>
+<p class="note" id="adminUploadMsg"></p>
+<div class="admin-thumb-row" id="adminThumbs"></div>
+</div>
+</div>
+</div>
+
+<main class="main-content"><div class="gallery" id="galleryGrid">
+<img alt="Children" class="seed-img" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Children_Playing_uganda.jpg" style="width:100%;height:280px;object-fit:cover;border-radius:18px;display:block;box-shadow:0 10px 25px rgba(0,0,0,.15)"/>
+<img alt="Food Distribution" class="seed-img" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/African_kids_possing_for_a_Photo.jpg" style="width:100%;height:280px;object-fit:cover;border-radius:18px;display:block;box-shadow:0 10px 25px rgba(0,0,0,.15)"/>
+<img alt="Community Support" class="seed-img" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ugandan_school_Children.jpg" style="width:100%;height:280px;object-fit:cover;border-radius:18px;display:block;box-shadow:0 10px 25px rgba(0,0,0,.15)"/>
+<img alt="Volunteers" class="seed-img" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Children_smiling.jpg" style="width:100%;height:280px;object-fit:cover;border-radius:18px;display:block;box-shadow:0 10px 25px rgba(0,0,0,.15)"/>
+<img alt="Children Smiling" class="seed-img" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Children_Playing_uganda.jpg" style="width:100%;height:280px;object-fit:cover;border-radius:18px;display:block;box-shadow:0 10px 25px rgba(0,0,0,.15)"/>
 </div></main><footer><div style="max-width:1100px;margin:auto;text-align:center"><h3>Juice World Foundation Uganda</h3><p>Giving Hope, Love and a Better Future to Every Child.</p><p><strong>Founder:</strong> MUKIIBI AARON</p><a class="btn whatsapp" href="https://wa.me/256793017197">💬 WhatsApp: 0793017197</a><p style="margin-top:18px;font-size:13px">© 2026 Juice World Foundation Uganda. All rights reserved.</p></div></footer>
 <script>
 (function(){
@@ -166,6 +198,98 @@ footer,.footer{position:relative;z-index:1;background:linear-gradient(180deg,#07
  if(btn&&nav){btn.addEventListener('click',function(){const open=nav.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');});document.addEventListener('click',function(e){if(!nav.contains(e.target)&&!btn.contains(e.target))nav.classList.remove('open');});}
  const layer=document.querySelector('.stars-layer');
  if(layer){for(let i=0;i<75;i++){const s=document.createElement('i');s.style.left=(Math.random()*100)+'%';s.style.top=(Math.random()*100)+'%';s.style.animationDelay=(Math.random()*3)+'s';layer.appendChild(s);}}
+})();
+</script>
+
+<!-- ===== Simple admin photo upload — one password, one tap ===== -->
+<script>
+(function(){
+ var ADMIN_PASSWORD = "JWF2026admin"; // change this to whatever password you want to use
+ var STORE_KEY = "jwf_admin_gallery_images";
+
+ var toggle=document.getElementById('adminToggle');
+ var panel=document.getElementById('adminPanel');
+ var loginStep=document.getElementById('adminLoginStep');
+ var uploadStep=document.getElementById('adminUploadStep');
+ var passInput=document.getElementById('adminPass');
+ var loginBtn=document.getElementById('adminLoginBtn');
+ var loginMsg=document.getElementById('adminLoginMsg');
+ var fileInput=document.getElementById('adminFile');
+ var uploadMsg=document.getElementById('adminUploadMsg');
+ var thumbRow=document.getElementById('adminThumbs');
+ var grid=document.getElementById('galleryGrid');
+
+ function getStored(){
+   try{return JSON.parse(localStorage.getItem(STORE_KEY)||"[]");}catch(e){return [];}
+ }
+ function setStored(list){
+   localStorage.setItem(STORE_KEY, JSON.stringify(list));
+ }
+ function addImgToGrid(dataUrl){
+   var img=document.createElement('img');
+   img.src=dataUrl; img.alt="Uploaded photo"; img.loading="lazy"; img.className="live-img";
+   img.style.cssText="width:100%;height:280px;object-fit:cover;border-radius:18px;display:block;box-shadow:0 10px 25px rgba(0,0,0,.15)";
+   grid.appendChild(img);
+ }
+ function renderStoredIntoGallery(){
+   getStored().forEach(addImgToGrid);
+ }
+ function renderThumbs(){
+   var list=getStored();
+   thumbRow.innerHTML="";
+   list.forEach(function(dataUrl, idx){
+     var wrap=document.createElement('div'); wrap.className="admin-thumb";
+     var img=document.createElement('img'); img.src=dataUrl;
+     var del=document.createElement('button'); del.textContent="✕";
+     del.onclick=function(){
+       var l=getStored(); l.splice(idx,1); setStored(l);
+       location.reload();
+     };
+     wrap.appendChild(img); wrap.appendChild(del);
+     thumbRow.appendChild(wrap);
+   });
+ }
+
+ renderStoredIntoGallery();
+
+ if(toggle){
+   toggle.addEventListener('click', function(){ panel.classList.toggle('open'); });
+ }
+ if(loginBtn){
+   loginBtn.addEventListener('click', function(){
+     if(passInput.value === ADMIN_PASSWORD){
+       loginStep.style.display="none";
+       uploadStep.style.display="block";
+       renderThumbs();
+     } else {
+       loginMsg.textContent="Incorrect password.";
+     }
+   });
+ }
+ if(fileInput){
+   fileInput.addEventListener('change', function(){
+     var files=Array.prototype.slice.call(fileInput.files||[]);
+     if(!files.length) return;
+     uploadMsg.textContent="Uploading...";
+     var list=getStored();
+     var remaining=files.length;
+     files.forEach(function(file){
+       var reader=new FileReader();
+       reader.onload=function(e){
+         list.push(e.target.result);
+         setStored(list);
+         addImgToGrid(e.target.result);
+         remaining--;
+         if(remaining===0){
+           uploadMsg.textContent="Uploaded ✔";
+           renderThumbs();
+           fileInput.value="";
+         }
+       };
+       reader.readAsDataURL(file);
+     });
+   });
+ }
 })();
 </script>
 </body>
